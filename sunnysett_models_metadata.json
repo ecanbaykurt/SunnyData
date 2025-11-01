@@ -1,0 +1,1442 @@
+{
+  "project": "SunnySett AI Model Discovery Platform",
+  "description": "Expanded collection of pre-trained and specialized models across persona, industry, and modality-focused categories.",
+  "total_categories": 33,
+  "total_models": 141,
+  "categories": {
+    "Advanced_NLP": {
+      "model_count": 5,
+      "models": [
+        {
+          "id": "allenai/unifiedqa-t5-large",
+          "pipeline": "question-answering",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Unified question answering across multiple domains",
+          "script_path": "sunnysett_models/Advanced_NLP/allenai_unifiedqa_t5_large.py",
+          "url": "https://huggingface.co/allenai/unifiedqa-t5-large"
+        },
+        {
+          "id": "facebook/blenderbot-400M-distill",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Distilled conversational AI for customer service",
+          "script_path": "sunnysett_models/Advanced_NLP/facebook_blenderbot_400M_distill.py",
+          "url": "https://huggingface.co/facebook/blenderbot-400M-distill"
+        },
+        {
+          "id": "google/flan-t5-large",
+          "pipeline": "text2text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Instruction-tuned T5 for complex reasoning and task solving",
+          "script_path": "sunnysett_models/Advanced_NLP/google_flan_t5_large.py",
+          "url": "https://huggingface.co/google/flan-t5-large"
+        },
+        {
+          "id": "google/flan-t5-xl",
+          "pipeline": "text2text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Extra large instruction-tuned model for complex tasks",
+          "script_path": "sunnysett_models/Advanced_NLP/google_flan_t5_xl.py",
+          "url": "https://huggingface.co/google/flan-t5-xl"
+        },
+        {
+          "id": "microsoft/DialoGPT-large",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Large conversational AI for complex customer support",
+          "script_path": "sunnysett_models/Advanced_NLP/microsoft_DialoGPT_large.py",
+          "url": "https://huggingface.co/microsoft/DialoGPT-large"
+        }
+      ]
+    },
+    "Agents_Reasoning": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "allenai/unifiedqa-t5-large",
+          "pipeline": "question-answering",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Multi-step question answering and reasoning",
+          "script_path": "sunnysett_models/Agents_Reasoning/allenai_unifiedqa_t5_large.py",
+          "url": "https://huggingface.co/allenai/unifiedqa-t5-large"
+        },
+        {
+          "id": "facebook/blenderbot-400M-distill",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Multi-turn conversational AI",
+          "script_path": "sunnysett_models/Agents_Reasoning/facebook_blenderbot_400M_distill.py",
+          "url": "https://huggingface.co/facebook/blenderbot-400M-distill"
+        },
+        {
+          "id": "google/flan-t5-large",
+          "pipeline": "text2text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Chain-of-thought reasoning and instruction following",
+          "script_path": "sunnysett_models/Agents_Reasoning/google_flan_t5_large.py",
+          "url": "https://huggingface.co/google/flan-t5-large"
+        },
+        {
+          "id": "google/flan-t5-xl",
+          "pipeline": "text2text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Large-scale instruction following and reasoning",
+          "script_path": "sunnysett_models/Agents_Reasoning/google_flan_t5_xl.py",
+          "url": "https://huggingface.co/google/flan-t5-xl"
+        },
+        {
+          "id": "microsoft/CodeGPT-small-py",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Code generation with reasoning",
+          "script_path": "sunnysett_models/Agents_Reasoning/microsoft_CodeGPT_small_py.py",
+          "url": "https://huggingface.co/microsoft/CodeGPT-small-py"
+        },
+        {
+          "id": "microsoft/DialoGPT-large",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Conversational AI with reasoning capabilities",
+          "script_path": "sunnysett_models/Agents_Reasoning/microsoft_DialoGPT_large.py",
+          "url": "https://huggingface.co/microsoft/DialoGPT-large"
+        }
+      ]
+    },
+    "Agriculture": {
+      "model_count": 5,
+      "models": [
+        {
+          "id": "facebook/detr-resnet-50",
+          "pipeline": "object-detection",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Automated plant counting and yield estimation",
+          "script_path": "sunnysett_models/Agriculture/facebook_detr_resnet_50.py",
+          "url": "https://huggingface.co/facebook/detr-resnet-50"
+        },
+        {
+          "id": "facebook/mask2former",
+          "pipeline": "image-segmentation",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Soil composition analysis and nutrient mapping",
+          "script_path": "sunnysett_models/Agriculture/facebook_mask2former.py",
+          "url": "https://huggingface.co/facebook/mask2former"
+        },
+        {
+          "id": "facebook/swin-base-patch4-window7-224",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Crop damage assessment from weather events",
+          "script_path": "sunnysett_models/Agriculture/facebook_swin_base_patch4_window7_224.py",
+          "url": "https://huggingface.co/facebook/swin-base-patch4-window7-224"
+        },
+        {
+          "id": "google/vit-base-patch16-224",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Agricultural disease detection and crop monitoring",
+          "script_path": "sunnysett_models/Agriculture/google_vit_base_patch16_224.py",
+          "url": "https://huggingface.co/google/vit-base-patch16-224"
+        },
+        {
+          "id": "google/vit-large-patch16-224",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Crop maturity assessment and harvest timing",
+          "script_path": "sunnysett_models/Agriculture/google_vit_large_patch16_224.py",
+          "url": "https://huggingface.co/google/vit-large-patch16-224"
+        }
+      ]
+    },
+    "Audio_Speech": {
+      "model_count": 5,
+      "models": [
+        {
+          "id": "facebook/fairseq_s2t_translator",
+          "pipeline": "speech-to-text",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Real-time speech translation for global communication",
+          "script_path": "sunnysett_models/Audio_Speech/facebook_fairseq_s2t_translator.py",
+          "url": "https://huggingface.co/facebook/fairseq_s2t_translator"
+        },
+        {
+          "id": "facebook/hubert-large-ls960",
+          "pipeline": "automatic-speech-recognition",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Self-supervised speech recognition for multiple languages",
+          "script_path": "sunnysett_models/Audio_Speech/facebook_hubert_large_ls960.py",
+          "url": "https://huggingface.co/facebook/hubert-large-ls960"
+        },
+        {
+          "id": "facebook/s2t-small-librispeech-asr",
+          "pipeline": "automatic-speech-recognition",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Lightweight speech recognition for mobile applications",
+          "script_path": "sunnysett_models/Audio_Speech/facebook_s2t_small_librispeech_asr.py",
+          "url": "https://huggingface.co/facebook/s2t-small-librispeech-asr"
+        },
+        {
+          "id": "facebook/textlesslib_s2t",
+          "pipeline": "speech-to-text",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Direct speech-to-speech translation without text",
+          "script_path": "sunnysett_models/Audio_Speech/facebook_textlesslib_s2t.py",
+          "url": "https://huggingface.co/facebook/textlesslib_s2t"
+        },
+        {
+          "id": "facebook/wav2vec2-large-960h",
+          "pipeline": "automatic-speech-recognition",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "High-accuracy speech recognition for call centers",
+          "script_path": "sunnysett_models/Audio_Speech/facebook_wav2vec2_large_960h.py",
+          "url": "https://huggingface.co/facebook/wav2vec2-large-960h"
+        }
+      ]
+    },
+    "Business_Intelligence": {
+      "model_count": 3,
+      "models": [
+        {
+          "id": "autogluon/autogluon-tabular",
+          "pipeline": "tabular-regression",
+          "modality": "Tabular/Time-series",
+          "type": "Classical/AutoML",
+          "description": "Business performance prediction and optimization",
+          "script_path": "sunnysett_models/Business_Intelligence/autogluon_autogluon_tabular.py",
+          "url": "https://huggingface.co/autogluon/autogluon-tabular"
+        },
+        {
+          "id": "facebook/bart-large-cnn",
+          "pipeline": "summarization",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Executive report summarization and business insights",
+          "script_path": "sunnysett_models/Business_Intelligence/facebook_bart_large_cnn.py",
+          "url": "https://huggingface.co/facebook/bart-large-cnn"
+        },
+        {
+          "id": "facebook/bart-large-mnli",
+          "pipeline": "zero-shot-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Business risk assessment and mitigation strategies",
+          "script_path": "sunnysett_models/Business_Intelligence/facebook_bart_large_mnli.py",
+          "url": "https://huggingface.co/facebook/bart-large-mnli"
+        }
+      ]
+    },
+    "Climate": {
+      "model_count": 4,
+      "models": [
+        {
+          "id": "allenai/scibert_scivocab_uncased",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "SciBERT for scientific climate literature analysis",
+          "script_path": "sunnysett_models/Climate/allenai_scibert_scivocab_uncased.py",
+          "url": "https://huggingface.co/allenai/scibert_scivocab_uncased"
+        },
+        {
+          "id": "climatebert/distilbert-base-uncased-finetuned-climate",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "ClimateBERT model for climate-related text analysis",
+          "script_path": "sunnysett_models/Climate/climatebert_distilbert_base_uncased_finetuned_climate.py",
+          "url": "https://huggingface.co/climatebert/distilbert-base-uncased-finetuned-climate"
+        },
+        {
+          "id": "microsoft/layoutlmv3-base",
+          "pipeline": "document-question-answering",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "LayoutLMv3 for climate report document understanding",
+          "script_path": "sunnysett_models/Climate/microsoft_layoutlmv3_base.py",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base"
+        },
+        {
+          "id": "sentence-transformers/all-MiniLM-L6-v2",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Sentence transformer for climate document similarity",
+          "script_path": "sunnysett_models/Climate/sentence_transformers_all_MiniLM_L6_v2.py",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+        }
+      ]
+    },
+    "Code_Intelligence": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "Qwen/Qwen-Coder-7B-Instruct",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Instruction-tuned code generation",
+          "script_path": "sunnysett_models/Code_Intelligence/Qwen_Qwen_Coder_7B_Instruct.py",
+          "url": "https://huggingface.co/Qwen/Qwen-Coder-7B-Instruct"
+        },
+        {
+          "id": "Salesforce/codet5-base",
+          "pipeline": "text2text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Code-to-text and text-to-code generation",
+          "script_path": "sunnysett_models/Code_Intelligence/Salesforce_codet5_base.py",
+          "url": "https://huggingface.co/Salesforce/codet5-base"
+        },
+        {
+          "id": "bigcode/starcoder",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Code completion and generation for 80+ programming languages",
+          "script_path": "sunnysett_models/Code_Intelligence/bigcode_starcoder.py",
+          "url": "https://huggingface.co/bigcode/starcoder"
+        },
+        {
+          "id": "codellama/CodeLlama-7b-hf",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Code generation and explanation",
+          "script_path": "sunnysett_models/Code_Intelligence/codellama_CodeLlama_7b_hf.py",
+          "url": "https://huggingface.co/codellama/CodeLlama-7b-hf"
+        },
+        {
+          "id": "facebook/incoder-1B",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Code infilling and completion",
+          "script_path": "sunnysett_models/Code_Intelligence/facebook_incoder_1B.py",
+          "url": "https://huggingface.co/facebook/incoder-1B"
+        },
+        {
+          "id": "microsoft/codebert-base",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Code understanding and semantic search",
+          "script_path": "sunnysett_models/Code_Intelligence/microsoft_codebert_base.py",
+          "url": "https://huggingface.co/microsoft/codebert-base"
+        }
+      ]
+    },
+    "Computer_Vision": {
+      "model_count": 1,
+      "models": [
+        {
+          "id": "facebook/convnext-base",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Modern ConvNet for image classification and feature extraction",
+          "script_path": "sunnysett_models/Computer_Vision/facebook_convnext_base.py",
+          "url": "https://huggingface.co/facebook/convnext-base"
+        }
+      ]
+    },
+    "Cybersecurity": {
+      "model_count": 4,
+      "models": [
+        {
+          "id": "cybersecurity-nlp/bert-malware",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "BERT model trained for malware detection and analysis",
+          "script_path": "sunnysett_models/Cybersecurity/cybersecurity_nlp_bert_malware.py",
+          "url": "https://huggingface.co/cybersecurity-nlp/bert-malware"
+        },
+        {
+          "id": "microsoft/DialoGPT-medium",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "DialoGPT for security chatbot and incident response",
+          "script_path": "sunnysett_models/Cybersecurity/microsoft_DialoGPT_medium.py",
+          "url": "https://huggingface.co/microsoft/DialoGPT-medium"
+        },
+        {
+          "id": "roberta-cybersec",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "RoBERTa model fine-tuned for cybersecurity text analysis",
+          "script_path": "sunnysett_models/Cybersecurity/roberta_cybersec.py",
+          "url": ""
+        },
+        {
+          "id": "symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Multilingual RoBERTa for natural language inference in security contexts",
+          "script_path": "sunnysett_models/Cybersecurity/symanto_sn_xlm_roberta_base_snli_mnli_anli_xnli.py",
+          "url": "https://huggingface.co/symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli"
+        }
+      ]
+    },
+    "Data_Preprocessing": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Text outlier and anomaly detection",
+          "script_path": "sunnysett_models/Data_Preprocessing/cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+          "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest"
+        },
+        {
+          "id": "facebook/bart-large-mnli",
+          "pipeline": "zero-shot-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Language detection and filtering",
+          "script_path": "sunnysett_models/Data_Preprocessing/facebook_bart_large_mnli.py",
+          "url": "https://huggingface.co/facebook/bart-large-mnli"
+        },
+        {
+          "id": "google/vit-base-patch16-224",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Image quality assessment and filtering",
+          "script_path": "sunnysett_models/Data_Preprocessing/google_vit_base_patch16_224.py",
+          "url": "https://huggingface.co/google/vit-base-patch16-224"
+        },
+        {
+          "id": "microsoft/layoutlmv3-base",
+          "pipeline": "token-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Automatic column type detection for CSV files",
+          "script_path": "sunnysett_models/Data_Preprocessing/microsoft_layoutlmv3_base.py",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base"
+        },
+        {
+          "id": "sentence-transformers/all-MiniLM-L6-v2",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Semantic deduplication using embeddings",
+          "script_path": "sunnysett_models/Data_Preprocessing/sentence_transformers_all_MiniLM_L6_v2.py",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+        },
+        {
+          "id": "unitary/toxic-bert",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Content moderation and profanity detection",
+          "script_path": "sunnysett_models/Data_Preprocessing/unitary_toxic_bert.py",
+          "url": "https://huggingface.co/unitary/toxic-bert"
+        }
+      ]
+    },
+    "Deployment_Light": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "distilbert-base-uncased",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Lightweight BERT for fast inference",
+          "script_path": "sunnysett_models/Deployment_Light/distilbert_base_uncased.py",
+          "url": ""
+        },
+        {
+          "id": "distilroberta-base",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Fast RoBERTa variant for production",
+          "script_path": "sunnysett_models/Deployment_Light/distilroberta_base.py",
+          "url": ""
+        },
+        {
+          "id": "facebook/wav2vec2-base",
+          "pipeline": "automatic-speech-recognition",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Lightweight speech recognition",
+          "script_path": "sunnysett_models/Deployment_Light/facebook_wav2vec2_base.py",
+          "url": "https://huggingface.co/facebook/wav2vec2-base"
+        },
+        {
+          "id": "google/vit-base-patch16-224",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Efficient vision transformer",
+          "script_path": "sunnysett_models/Deployment_Light/google_vit_base_patch16_224.py",
+          "url": "https://huggingface.co/google/vit-base-patch16-224"
+        },
+        {
+          "id": "microsoft/DialoGPT-small",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Lightweight conversational AI",
+          "script_path": "sunnysett_models/Deployment_Light/microsoft_DialoGPT_small.py",
+          "url": "https://huggingface.co/microsoft/DialoGPT-small"
+        },
+        {
+          "id": "sentence-transformers/all-MiniLM-L6-v2",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Fast semantic search embeddings",
+          "script_path": "sunnysett_models/Deployment_Light/sentence_transformers_all_MiniLM_L6_v2.py",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+        }
+      ]
+    },
+    "Education": {
+      "model_count": 2,
+      "models": [
+        {
+          "id": "deepset/roberta-base-squad2",
+          "pipeline": "question-answering",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "RoBERTa model fine-tuned for question answering",
+          "script_path": "sunnysett_models/Education/deepset_roberta_base_squad2.py",
+          "url": "https://huggingface.co/deepset/roberta-base-squad2"
+        },
+        {
+          "id": "openai/whisper-base",
+          "pipeline": "automatic-speech-recognition",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Whisper model for speech recognition and transcription",
+          "script_path": "sunnysett_models/Education/openai_whisper_base.py",
+          "url": "https://huggingface.co/openai/whisper-base"
+        }
+      ]
+    },
+    "Engineering": {
+      "model_count": 3,
+      "models": [
+        {
+          "id": "Salesforce/codet5-base",
+          "pipeline": "text2text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "CodeT5 for code generation and summarization",
+          "script_path": "sunnysett_models/Engineering/Salesforce_codet5_base.py",
+          "url": "https://huggingface.co/Salesforce/codet5-base"
+        },
+        {
+          "id": "microsoft/codebert-base",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "CodeBERT for code understanding and generation",
+          "script_path": "sunnysett_models/Engineering/microsoft_codebert_base.py",
+          "url": "https://huggingface.co/microsoft/codebert-base"
+        },
+        {
+          "id": "sentence-transformers/all-MiniLM-L6-v2",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Sentence transformer for semantic search and similarity",
+          "script_path": "sunnysett_models/Engineering/sentence_transformers_all_minilm_l6_v2.py",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+        }
+      ]
+    },
+    "Evaluation_Monitoring": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "A/B testing evaluation via scoring",
+          "script_path": "sunnysett_models/Evaluation_Monitoring/cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+          "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest"
+        },
+        {
+          "id": "facebook/bart-large-mnli",
+          "pipeline": "zero-shot-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Hallucination and fact-checking",
+          "script_path": "sunnysett_models/Evaluation_Monitoring/facebook_bart_large_mnli.py",
+          "url": "https://huggingface.co/facebook/bart-large-mnli"
+        },
+        {
+          "id": "google/flan-t5-base",
+          "pipeline": "text2text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Output quality scoring and ranking",
+          "script_path": "sunnysett_models/Evaluation_Monitoring/google_flan_t5_base.py",
+          "url": "https://huggingface.co/google/flan-t5-base"
+        },
+        {
+          "id": "microsoft/DialoGPT-medium",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "LLM-as-a-Judge for output evaluation",
+          "script_path": "sunnysett_models/Evaluation_Monitoring/microsoft_DialoGPT_medium.py",
+          "url": "https://huggingface.co/microsoft/DialoGPT-medium"
+        },
+        {
+          "id": "sentence-transformers/all-MiniLM-L6-v2",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Embedding drift detection for model monitoring",
+          "script_path": "sunnysett_models/Evaluation_Monitoring/sentence_transformers_all_MiniLM_L6_v2.py",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+        },
+        {
+          "id": "unitary/toxic-bert",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Bias and toxicity detection",
+          "script_path": "sunnysett_models/Evaluation_Monitoring/unitary_toxic_bert.py",
+          "url": "https://huggingface.co/unitary/toxic-bert"
+        }
+      ]
+    },
+    "Finance": {
+      "model_count": 4,
+      "models": [
+        {
+          "id": "ProsusAI/finbert",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "FinBERT",
+          "script_path": "sunnysett_models/Finance/prosusai_finbert.py",
+          "url": "https://huggingface.co/ProsusAI/finbert"
+        },
+        {
+          "id": "mrm8488/distilroberta-finetuned-financial-news-sentiment",
+          "pipeline": "sentiment-analysis",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "DistilRoBERTa model fine-tuned for financial news sentiment",
+          "script_path": "sunnysett_models/Finance/mrm8488_distilroberta_finetuned_financial_news_sentiment.py",
+          "url": "https://huggingface.co/mrm8488/distilroberta-finetuned-financial-news-sentiment"
+        },
+        {
+          "id": "nlpaueb/financial-bert",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Financial BERT model for financial text understanding",
+          "script_path": "sunnysett_models/Finance/nlpaueb_financial_bert.py",
+          "url": "https://huggingface.co/nlpaueb/financial-bert"
+        },
+        {
+          "id": "yiyanghkust/finbert-tone",
+          "pipeline": "sentiment-analysis",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "FinBERT model fine-tuned for financial sentiment analysis",
+          "script_path": "sunnysett_models/Finance/yiyanghkust_finbert_tone.py",
+          "url": "https://huggingface.co/yiyanghkust/finbert-tone"
+        }
+      ]
+    },
+    "Healthcare": {
+      "model_count": 4,
+      "models": [
+        {
+          "id": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "SapBERT for biomedical entity linking and normalization",
+          "script_path": "sunnysett_models/Healthcare/cambridgeltl_SapBERT_from_PubMedBERT_fulltext.py",
+          "url": "https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext"
+        },
+        {
+          "id": "d4data/biomedical-ner-all",
+          "pipeline": "token-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Biomedical NER model for extracting medical entities",
+          "script_path": "sunnysett_models/Healthcare/d4data_biomedical_ner_all.py",
+          "url": "https://huggingface.co/d4data/biomedical-ner-all"
+        },
+        {
+          "id": "emilyalsentzer/Bio_ClinicalBERT",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Bio ClinicalBERT",
+          "script_path": "sunnysett_models/Healthcare/emilyalsentzer_bio_clinicalbert.py",
+          "url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT"
+        },
+        {
+          "id": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "PubMedBERT for biomedical text understanding",
+          "script_path": "sunnysett_models/Healthcare/microsoft_BiomedNLP_PubMedBERT_base_uncased_abstract_fulltext.py",
+          "url": "https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext"
+        }
+      ]
+    },
+    "Law": {
+      "model_count": 3,
+      "models": [
+        {
+          "id": "bvanaken/bert-arch",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "BERT-ARCH for legal argument mining",
+          "script_path": "sunnysett_models/Law/bvanaken_bert_arch.py",
+          "url": "https://huggingface.co/bvanaken/bert-arch"
+        },
+        {
+          "id": "nlpaueb/legal-bert-base-uncased",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Legal BERT model for legal text understanding",
+          "script_path": "sunnysett_models/Law/nlpaueb_legal_bert_base_uncased.py",
+          "url": "https://huggingface.co/nlpaueb/legal-bert-base-uncased"
+        },
+        {
+          "id": "zlucia/legalbert",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "LegalBERT model for legal document analysis",
+          "script_path": "sunnysett_models/Law/zlucia_legalbert.py",
+          "url": "https://huggingface.co/zlucia/legalbert"
+        }
+      ]
+    },
+    "Marketing": {
+      "model_count": 3,
+      "models": [
+        {
+          "id": "Salesforce/blip-image-captioning",
+          "pipeline": "image-to-text",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "BLIP model for image captioning and visual question answering",
+          "script_path": "sunnysett_models/Marketing/Salesforce_blip_image_captioning.py",
+          "url": "https://huggingface.co/Salesforce/blip-image-captioning"
+        },
+        {
+          "id": "bert-base-uncased",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "General purpose BERT model for text classification and sentiment analysis",
+          "script_path": "sunnysett_models/Marketing/bert_base_uncased.py",
+          "url": ""
+        },
+        {
+          "id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+          "pipeline": "sentiment-analysis",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "RoBERTa model fine-tuned for Twitter sentiment analysis",
+          "script_path": "sunnysett_models/Marketing/cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+          "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest"
+        }
+      ]
+    },
+    "Material_Science": {
+      "model_count": 3,
+      "models": [
+        {
+          "id": "CompVis/stable-diffusion-v1-4",
+          "pipeline": "text-to-image",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Stable Diffusion for generating material visualizations",
+          "script_path": "sunnysett_models/Material_Science/CompVis_stable_diffusion_v1_4.py",
+          "url": "https://huggingface.co/CompVis/stable-diffusion-v1-4"
+        },
+        {
+          "id": "materialsproject/mp-bert",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "BERT model trained on materials science literature",
+          "script_path": "sunnysett_models/Material_Science/materialsproject_mp_bert.py",
+          "url": "https://huggingface.co/materialsproject/mp-bert"
+        },
+        {
+          "id": "schwallie/chemberta",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "ChemBERTa model for chemical text understanding",
+          "script_path": "sunnysett_models/Material_Science/schwallie_chemberta.py",
+          "url": "https://huggingface.co/schwallie/chemberta"
+        }
+      ]
+    },
+    "Multilingual": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "Helsinki-NLP/opus-mt-en-de",
+          "pipeline": "translation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "English to German translation",
+          "script_path": "sunnysett_models/Multilingual/Helsinki_NLP_opus_mt_en_de.py",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-de"
+        },
+        {
+          "id": "Helsinki-NLP/opus-mt-en-es",
+          "pipeline": "translation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "High-quality English to Spanish translation",
+          "script_path": "sunnysett_models/Multilingual/Helsinki_NLP_opus_mt_en_es.py",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-es"
+        },
+        {
+          "id": "Helsinki-NLP/opus-mt-en-fr",
+          "pipeline": "translation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "English to French translation for international apps",
+          "script_path": "sunnysett_models/Multilingual/Helsinki_NLP_opus_mt_en_fr.py",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-fr"
+        },
+        {
+          "id": "facebook/m2m100_418M",
+          "pipeline": "translation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "100+ language translation model",
+          "script_path": "sunnysett_models/Multilingual/facebook_m2m100_418M.py",
+          "url": "https://huggingface.co/facebook/m2m100_418M"
+        },
+        {
+          "id": "facebook/mbart-large-50-many-to-many-mmt",
+          "pipeline": "summarization",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Multilingual text summarization",
+          "script_path": "sunnysett_models/Multilingual/facebook_mbart_large_50_many_to_many_mmt.py",
+          "url": "https://huggingface.co/facebook/mbart-large-50-many-to-many-mmt"
+        },
+        {
+          "id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Cross-lingual embeddings for 50+ languages",
+          "script_path": "sunnysett_models/Multilingual/sentence_transformers_paraphrase_multilingual_MiniLM_L12_v2.py",
+          "url": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+        }
+      ]
+    },
+    "Persona_Climate": {
+      "model_count": 5,
+      "models": [
+        {
+          "id": "Helsinki-NLP/opus-mt-en-es",
+          "pipeline": "translation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Multilingual climate research translation",
+          "script_path": "sunnysett_models/Persona_Climate/Helsinki_NLP_opus_mt_en_es.py",
+          "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-es"
+        },
+        {
+          "id": "allenai/scibert_scivocab_uncased",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Scientific literature analysis for climate research",
+          "script_path": "sunnysett_models/Persona_Climate/allenai_scibert_scivocab_uncased.py",
+          "url": "https://huggingface.co/allenai/scibert_scivocab_uncased"
+        },
+        {
+          "id": "facebook/mask2former",
+          "pipeline": "image-segmentation",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Satellite image segmentation for environmental monitoring",
+          "script_path": "sunnysett_models/Persona_Climate/facebook_mask2former.py",
+          "url": "https://huggingface.co/facebook/mask2former"
+        },
+        {
+          "id": "google/vit-base-patch16-224",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Environmental image classification and monitoring",
+          "script_path": "sunnysett_models/Persona_Climate/google_vit_base_patch16_224.py",
+          "url": "https://huggingface.co/google/vit-base-patch16-224"
+        },
+        {
+          "id": "nixtla/nixtla",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Neural/Deep",
+          "description": "Climate data time series forecasting",
+          "script_path": "sunnysett_models/Persona_Climate/nixtla_nixtla.py",
+          "url": "https://huggingface.co/nixtla/nixtla"
+        }
+      ]
+    },
+    "Persona_Healthcare": {
+      "model_count": 5,
+      "models": [
+        {
+          "id": "d4data/biomedical-ner-all",
+          "pipeline": "token-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Medical entity recognition and extraction",
+          "script_path": "sunnysett_models/Persona_Healthcare/d4data_biomedical_ner_all.py",
+          "url": "https://huggingface.co/d4data/biomedical-ner-all"
+        },
+        {
+          "id": "emilyalsentzer/Bio_ClinicalBERT",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Medical diagnosis and classification",
+          "script_path": "sunnysett_models/Persona_Healthcare/emilyalsentzer_Bio_ClinicalBERT.py",
+          "url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT"
+        },
+        {
+          "id": "facebook/bart-large-cnn",
+          "pipeline": "summarization",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Clinical note summarization",
+          "script_path": "sunnysett_models/Persona_Healthcare/facebook_bart_large_cnn.py",
+          "url": "https://huggingface.co/facebook/bart-large-cnn"
+        },
+        {
+          "id": "facebook/blip-image-captioning-base",
+          "pipeline": "image-to-text",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Medical image analysis and captioning",
+          "script_path": "sunnysett_models/Persona_Healthcare/facebook_blip_image_captioning_base.py",
+          "url": "https://huggingface.co/facebook/blip-image-captioning-base"
+        },
+        {
+          "id": "microsoft/layoutlmv3-base",
+          "pipeline": "token-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "HIPAA-compliant data anonymization",
+          "script_path": "sunnysett_models/Persona_Healthcare/microsoft_layoutlmv3_base.py",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base"
+        }
+      ]
+    },
+    "Persona_Legal": {
+      "model_count": 5,
+      "models": [
+        {
+          "id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+          "pipeline": "token-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Legal entity recognition and extraction",
+          "script_path": "sunnysett_models/Persona_Legal/dbmdz_bert_large_cased_finetuned_conll03_english.py",
+          "url": "https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english"
+        },
+        {
+          "id": "facebook/bart-large-cnn",
+          "pipeline": "summarization",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Legal document summarization",
+          "script_path": "sunnysett_models/Persona_Legal/facebook_bart_large_cnn.py",
+          "url": "https://huggingface.co/facebook/bart-large-cnn"
+        },
+        {
+          "id": "microsoft/layoutlmv3-base",
+          "pipeline": "document-question-answering",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Document structure extraction to JSON",
+          "script_path": "sunnysett_models/Persona_Legal/microsoft_layoutlmv3_base.py",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base"
+        },
+        {
+          "id": "microsoft/trocr-base-printed",
+          "pipeline": "image-to-text",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Document text extraction and OCR",
+          "script_path": "sunnysett_models/Persona_Legal/microsoft_trocr_base_printed.py",
+          "url": "https://huggingface.co/microsoft/trocr-base-printed"
+        },
+        {
+          "id": "nlpaueb/legal-bert-base-uncased",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Contract analysis and clause classification",
+          "script_path": "sunnysett_models/Persona_Legal/nlpaueb_legal_bert_base_uncased.py",
+          "url": "https://huggingface.co/nlpaueb/legal-bert-base-uncased"
+        }
+      ]
+    },
+    "Persona_Maker": {
+      "model_count": 5,
+      "models": [
+        {
+          "id": "Salesforce/blip-image-captioning-base",
+          "pipeline": "image-to-text",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Image description for accessibility",
+          "script_path": "sunnysett_models/Persona_Maker/Salesforce_blip_image_captioning_base.py",
+          "url": "https://huggingface.co/Salesforce/blip-image-captioning-base"
+        },
+        {
+          "id": "bigcode/starcoder",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Code completion and generation for web apps",
+          "script_path": "sunnysett_models/Persona_Maker/bigcode_starcoder.py",
+          "url": "https://huggingface.co/bigcode/starcoder"
+        },
+        {
+          "id": "distilbert-base-uncased",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Lightweight model for fast API deployment",
+          "script_path": "sunnysett_models/Persona_Maker/distilbert_base_uncased.py",
+          "url": ""
+        },
+        {
+          "id": "microsoft/DialoGPT-medium",
+          "pipeline": "text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Conversational AI for user interactions",
+          "script_path": "sunnysett_models/Persona_Maker/microsoft_DialoGPT_medium.py",
+          "url": "https://huggingface.co/microsoft/DialoGPT-medium"
+        },
+        {
+          "id": "sentence-transformers/all-MiniLM-L6-v2",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Search and recommendation engine",
+          "script_path": "sunnysett_models/Persona_Maker/sentence_transformers_all_MiniLM_L6_v2.py",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+        }
+      ]
+    },
+    "Predictive_Analytics": {
+      "model_count": 3,
+      "models": [
+        {
+          "id": "facebook/prophet",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Classical/AutoML",
+          "description": "Business revenue prediction with seasonality",
+          "script_path": "sunnysett_models/Predictive_Analytics/facebook_prophet.py",
+          "url": "https://huggingface.co/facebook/prophet"
+        },
+        {
+          "id": "google/tft",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Neural/Deep",
+          "description": "Complex multivariate time series forecasting",
+          "script_path": "sunnysett_models/Predictive_Analytics/google_tft.py",
+          "url": "https://huggingface.co/google/tft"
+        },
+        {
+          "id": "nixtla/nixtla",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Neural/Deep",
+          "description": "Inventory and demand forecasting for supply chain",
+          "script_path": "sunnysett_models/Predictive_Analytics/nixtla_nixtla.py",
+          "url": "https://huggingface.co/nixtla/nixtla"
+        }
+      ]
+    },
+    "Real_Estate": {
+      "model_count": 1,
+      "models": [
+        {
+          "id": "facebook/blip-image-captioning",
+          "pipeline": "image-to-text",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Automated property description generation for listings",
+          "script_path": "sunnysett_models/Real_Estate/facebook_blip_image_captioning.py",
+          "url": "https://huggingface.co/facebook/blip-image-captioning"
+        }
+      ]
+    },
+    "Security_Privacy": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Content moderation and safety filtering",
+          "script_path": "sunnysett_models/Security_Privacy/cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+          "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest"
+        },
+        {
+          "id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+          "pipeline": "token-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Document anonymization for legal and medical",
+          "script_path": "sunnysett_models/Security_Privacy/dbmdz_bert_large_cased_finetuned_conll03_english.py",
+          "url": "https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english"
+        },
+        {
+          "id": "facebook/detr-resnet-50",
+          "pipeline": "object-detection",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Privacy-aware face detection and blurring",
+          "script_path": "sunnysett_models/Security_Privacy/facebook_detr_resnet_50.py",
+          "url": "https://huggingface.co/facebook/detr-resnet-50"
+        },
+        {
+          "id": "google/vit-base-patch16-224",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Watermark and tamper detection",
+          "script_path": "sunnysett_models/Security_Privacy/google_vit_base_patch16_224.py",
+          "url": "https://huggingface.co/google/vit-base-patch16-224"
+        },
+        {
+          "id": "microsoft/layoutlmv3-base",
+          "pipeline": "token-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Personally Identifiable Information detection",
+          "script_path": "sunnysett_models/Security_Privacy/microsoft_layoutlmv3_base.py",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base"
+        },
+        {
+          "id": "unitary/toxic-bert",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Phishing and abuse detection",
+          "script_path": "sunnysett_models/Security_Privacy/unitary_toxic_bert.py",
+          "url": "https://huggingface.co/unitary/toxic-bert"
+        }
+      ]
+    },
+    "Speech_Audio": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "facebook/s2t-small-librispeech-asr",
+          "pipeline": "automatic-speech-recognition",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Fast, lightweight speech recognition",
+          "script_path": "sunnysett_models/Speech_Audio/facebook_s2t_small_librispeech_asr.py",
+          "url": "https://huggingface.co/facebook/s2t-small-librispeech-asr"
+        },
+        {
+          "id": "facebook/wav2vec2-large-960h-lv60-self",
+          "pipeline": "automatic-speech-recognition",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Robust speech recognition with noise robustness",
+          "script_path": "sunnysett_models/Speech_Audio/facebook_wav2vec2_large_960h_lv60_self.py",
+          "url": "https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self"
+        },
+        {
+          "id": "j-hartmann/emotion-english-distilroberta-base",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Emotion detection from speech transcripts",
+          "script_path": "sunnysett_models/Speech_Audio/j_hartmann_emotion_english_distilroberta_base.py",
+          "url": "https://huggingface.co/j-hartmann/emotion-english-distilroberta-base"
+        },
+        {
+          "id": "microsoft/speecht5_tts",
+          "pipeline": "text-to-speech",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "High-quality text-to-speech synthesis",
+          "script_path": "sunnysett_models/Speech_Audio/microsoft_speecht5_tts.py",
+          "url": "https://huggingface.co/microsoft/speecht5_tts"
+        },
+        {
+          "id": "openai/whisper-large-v2",
+          "pipeline": "automatic-speech-recognition",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "High-accuracy speech-to-text for 99 languages",
+          "script_path": "sunnysett_models/Speech_Audio/openai_whisper_large_v2.py",
+          "url": "https://huggingface.co/openai/whisper-large-v2"
+        },
+        {
+          "id": "pyannote/speaker-diarization",
+          "pipeline": "audio-classification",
+          "modality": "Audio",
+          "type": "Neural/Deep",
+          "description": "Speaker segmentation and identification",
+          "script_path": "sunnysett_models/Speech_Audio/pyannote_speaker_diarization.py",
+          "url": "https://huggingface.co/pyannote/speaker-diarization"
+        }
+      ]
+    },
+    "Supply_Chain": {
+      "model_count": 1,
+      "models": [
+        {
+          "id": "t5-base",
+          "pipeline": "text2text-generation",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "T5 model for text-to-text tasks in supply chain management",
+          "script_path": "sunnysett_models/Supply_Chain/t5_base.py",
+          "url": ""
+        }
+      ]
+    },
+    "Tabular_TimeSeries": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "autogluon/autogluon-tabular",
+          "pipeline": "tabular-classification",
+          "modality": "Tabular/Time-series",
+          "type": "Classical/AutoML",
+          "description": "AutoML for structured data and CSV files",
+          "script_path": "sunnysett_models/Tabular_TimeSeries/autogluon_autogluon_tabular.py",
+          "url": "https://huggingface.co/autogluon/autogluon-tabular"
+        },
+        {
+          "id": "facebook/prophet",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Classical/AutoML",
+          "description": "Business forecasting with seasonality",
+          "script_path": "sunnysett_models/Tabular_TimeSeries/facebook_prophet.py",
+          "url": "https://huggingface.co/facebook/prophet"
+        },
+        {
+          "id": "google/tft",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Neural/Deep",
+          "description": "Multivariate time series forecasting",
+          "script_path": "sunnysett_models/Tabular_TimeSeries/google_tft.py",
+          "url": "https://huggingface.co/google/tft"
+        },
+        {
+          "id": "microsoft/forecast",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Classical/AutoML",
+          "description": "Enterprise time series forecasting",
+          "script_path": "sunnysett_models/Tabular_TimeSeries/microsoft_forecast.py",
+          "url": "https://huggingface.co/microsoft/forecast"
+        },
+        {
+          "id": "nixtla/nixtla",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Neural/Deep",
+          "description": "Time series forecasting for sales and usage",
+          "script_path": "sunnysett_models/Tabular_TimeSeries/nixtla_nixtla.py",
+          "url": "https://huggingface.co/nixtla/nixtla"
+        },
+        {
+          "id": "salesforce/codegen-350M-mono",
+          "pipeline": "tabular-classification",
+          "modality": "Tabular/Time-series",
+          "type": "Neural/Deep",
+          "description": "Anomaly detection in tabular data",
+          "script_path": "sunnysett_models/Tabular_TimeSeries/salesforce_codegen_350M_mono.py",
+          "url": "https://huggingface.co/salesforce/codegen-350M-mono"
+        }
+      ]
+    },
+    "Text_Language": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+          "pipeline": "text-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Advanced sentiment analysis for social media and customer feedback",
+          "script_path": "sunnysett_models/Text_Language/cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+          "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest"
+        },
+        {
+          "id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+          "pipeline": "token-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Named Entity Recognition for legal documents and contracts",
+          "script_path": "sunnysett_models/Text_Language/dbmdz_bert_large_cased_finetuned_conll03_english.py",
+          "url": "https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english"
+        },
+        {
+          "id": "deepset/roberta-base-squad2",
+          "pipeline": "question-answering",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Extractive question answering for knowledge bases",
+          "script_path": "sunnysett_models/Text_Language/deepset_roberta_base_squad2.py",
+          "url": "https://huggingface.co/deepset/roberta-base-squad2"
+        },
+        {
+          "id": "facebook/bart-large-cnn",
+          "pipeline": "summarization",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Long document summarization for reports and transcripts",
+          "script_path": "sunnysett_models/Text_Language/facebook_bart_large_cnn.py",
+          "url": "https://huggingface.co/facebook/bart-large-cnn"
+        },
+        {
+          "id": "facebook/bart-large-mnli",
+          "pipeline": "zero-shot-classification",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Zero-shot topic modeling and classification",
+          "script_path": "sunnysett_models/Text_Language/facebook_bart_large_mnli.py",
+          "url": "https://huggingface.co/facebook/bart-large-mnli"
+        },
+        {
+          "id": "sentence-transformers/all-MiniLM-L6-v2",
+          "pipeline": "feature-extraction",
+          "modality": "Text/NLP",
+          "type": "Neural/Deep",
+          "description": "Semantic search and embeddings for document retrieval",
+          "script_path": "sunnysett_models/Text_Language/sentence_transformers_all_MiniLM_L6_v2.py",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+        }
+      ]
+    },
+    "Time_Series": {
+      "model_count": 1,
+      "models": [
+        {
+          "id": "facebook/forecast",
+          "pipeline": "time-series-forecasting",
+          "modality": "Tabular/Time-series",
+          "type": "Classical/AutoML",
+          "description": "Facebook's forecasting model for business metrics",
+          "script_path": "sunnysett_models/Time_Series/facebook_forecast.py",
+          "url": "https://huggingface.co/facebook/forecast"
+        }
+      ]
+    },
+    "Vision_Multimodal": {
+      "model_count": 6,
+      "models": [
+        {
+          "id": "Salesforce/blip-image-captioning-base",
+          "pipeline": "image-to-text",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Image captioning for e-commerce and accessibility",
+          "script_path": "sunnysett_models/Vision_Multimodal/Salesforce_blip_image_captioning_base.py",
+          "url": "https://huggingface.co/Salesforce/blip-image-captioning-base"
+        },
+        {
+          "id": "Salesforce/blip-vqa-base",
+          "pipeline": "visual-question-answering",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Visual Question Answering",
+          "script_path": "sunnysett_models/Vision_Multimodal/Salesforce_blip_vqa_base.py",
+          "url": "https://huggingface.co/Salesforce/blip-vqa-base"
+        },
+        {
+          "id": "facebook/detr-resnet-50",
+          "pipeline": "object-detection",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Object detection and counting",
+          "script_path": "sunnysett_models/Vision_Multimodal/facebook_detr_resnet_50.py",
+          "url": "https://huggingface.co/facebook/detr-resnet-50"
+        },
+        {
+          "id": "google/vit-base-patch16-224",
+          "pipeline": "image-classification",
+          "modality": "Vision",
+          "type": "Neural/Deep",
+          "description": "Object and brand classification",
+          "script_path": "sunnysett_models/Vision_Multimodal/google_vit_base_patch16_224.py",
+          "url": "https://huggingface.co/google/vit-base-patch16-224"
+        },
+        {
+          "id": "microsoft/layoutlmv3-base",
+          "pipeline": "document-question-answering",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Document layout analysis and understanding",
+          "script_path": "sunnysett_models/Vision_Multimodal/microsoft_layoutlmv3_base.py",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base"
+        },
+        {
+          "id": "microsoft/trocr-base-printed",
+          "pipeline": "image-to-text",
+          "modality": "Vision+Text",
+          "type": "Neural/Deep",
+          "description": "Optical Character Recognition for documents",
+          "script_path": "sunnysett_models/Vision_Multimodal/microsoft_trocr_base_printed.py",
+          "url": "https://huggingface.co/microsoft/trocr-base-printed"
+        }
+      ]
+    }
+  }
+}

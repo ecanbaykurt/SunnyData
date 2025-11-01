@@ -1,0 +1,1570 @@
+{
+  "overall": {
+    "total_categories": 33,
+    "total_models": 141,
+    "type_counts": {
+      "Neural/Deep": 135,
+      "Classical/AutoML": 6
+    },
+    "modality_counts": {
+      "Text/NLP": 91,
+      "Vision": 15,
+      "Audio": 12,
+      "Tabular/Time-series": 12,
+      "Vision+Text": 11
+    },
+    "pipeline_counts": {
+      "question-answering": 4,
+      "text-generation": 13,
+      "text2text-generation": 8,
+      "object-detection": 3,
+      "image-segmentation": 2,
+      "image-classification": 9,
+      "speech-to-text": 2,
+      "automatic-speech-recognition": 8,
+      "tabular-regression": 1,
+      "summarization": 5,
+      "zero-shot-classification": 4,
+      "text-classification": 31,
+      "document-question-answering": 3,
+      "feature-extraction": 10,
+      "token-classification": 8,
+      "sentiment-analysis": 3,
+      "image-to-text": 7,
+      "text-to-image": 1,
+      "translation": 5,
+      "time-series-forecasting": 9,
+      "text-to-speech": 1,
+      "audio-classification": 1,
+      "tabular-classification": 2,
+      "visual-question-answering": 1
+    }
+  },
+  "category_counts": {
+    "Advanced_NLP": 5,
+    "Agents_Reasoning": 6,
+    "Agriculture": 5,
+    "Audio_Speech": 5,
+    "Business_Intelligence": 3,
+    "Climate": 4,
+    "Code_Intelligence": 6,
+    "Computer_Vision": 1,
+    "Cybersecurity": 4,
+    "Data_Preprocessing": 6,
+    "Deployment_Light": 6,
+    "Education": 2,
+    "Engineering": 3,
+    "Evaluation_Monitoring": 6,
+    "Finance": 4,
+    "Healthcare": 4,
+    "Law": 3,
+    "Marketing": 3,
+    "Material_Science": 3,
+    "Multilingual": 6,
+    "Persona_Climate": 5,
+    "Persona_Healthcare": 5,
+    "Persona_Legal": 5,
+    "Persona_Maker": 5,
+    "Predictive_Analytics": 3,
+    "Real_Estate": 1,
+    "Security_Privacy": 6,
+    "Speech_Audio": 6,
+    "Supply_Chain": 1,
+    "Tabular_TimeSeries": 6,
+    "Text_Language": 6,
+    "Time_Series": 1,
+    "Vision_Multimodal": 6
+  },
+  "category_modalities": {
+    "Advanced_NLP": {
+      "Text/NLP": 5
+    },
+    "Agents_Reasoning": {
+      "Text/NLP": 6
+    },
+    "Agriculture": {
+      "Vision": 5
+    },
+    "Audio_Speech": {
+      "Audio": 5
+    },
+    "Business_Intelligence": {
+      "Tabular/Time-series": 1,
+      "Text/NLP": 2
+    },
+    "Climate": {
+      "Text/NLP": 3,
+      "Vision+Text": 1
+    },
+    "Code_Intelligence": {
+      "Text/NLP": 6
+    },
+    "Computer_Vision": {
+      "Vision": 1
+    },
+    "Cybersecurity": {
+      "Text/NLP": 4
+    },
+    "Data_Preprocessing": {
+      "Text/NLP": 5,
+      "Vision": 1
+    },
+    "Deployment_Light": {
+      "Text/NLP": 4,
+      "Audio": 1,
+      "Vision": 1
+    },
+    "Education": {
+      "Text/NLP": 1,
+      "Audio": 1
+    },
+    "Engineering": {
+      "Text/NLP": 3
+    },
+    "Evaluation_Monitoring": {
+      "Text/NLP": 6
+    },
+    "Finance": {
+      "Text/NLP": 4
+    },
+    "Healthcare": {
+      "Text/NLP": 4
+    },
+    "Law": {
+      "Text/NLP": 3
+    },
+    "Marketing": {
+      "Text/NLP": 2,
+      "Vision+Text": 1
+    },
+    "Material_Science": {
+      "Vision": 1,
+      "Text/NLP": 2
+    },
+    "Multilingual": {
+      "Text/NLP": 6
+    },
+    "Persona_Climate": {
+      "Text/NLP": 2,
+      "Vision": 2,
+      "Tabular/Time-series": 1
+    },
+    "Persona_Healthcare": {
+      "Text/NLP": 4,
+      "Vision+Text": 1
+    },
+    "Persona_Legal": {
+      "Text/NLP": 3,
+      "Vision+Text": 2
+    },
+    "Persona_Maker": {
+      "Text/NLP": 4,
+      "Vision+Text": 1
+    },
+    "Predictive_Analytics": {
+      "Tabular/Time-series": 3
+    },
+    "Real_Estate": {
+      "Vision+Text": 1
+    },
+    "Security_Privacy": {
+      "Text/NLP": 4,
+      "Vision": 2
+    },
+    "Speech_Audio": {
+      "Audio": 5,
+      "Text/NLP": 1
+    },
+    "Supply_Chain": {
+      "Text/NLP": 1
+    },
+    "Tabular_TimeSeries": {
+      "Tabular/Time-series": 6
+    },
+    "Text_Language": {
+      "Text/NLP": 6
+    },
+    "Time_Series": {
+      "Tabular/Time-series": 1
+    },
+    "Vision_Multimodal": {
+      "Vision": 2,
+      "Vision+Text": 4
+    }
+  },
+  "category_types": {
+    "Advanced_NLP": {
+      "Neural/Deep": 5
+    },
+    "Agents_Reasoning": {
+      "Neural/Deep": 6
+    },
+    "Agriculture": {
+      "Neural/Deep": 5
+    },
+    "Audio_Speech": {
+      "Neural/Deep": 5
+    },
+    "Business_Intelligence": {
+      "Classical/AutoML": 1,
+      "Neural/Deep": 2
+    },
+    "Climate": {
+      "Neural/Deep": 4
+    },
+    "Code_Intelligence": {
+      "Neural/Deep": 6
+    },
+    "Computer_Vision": {
+      "Neural/Deep": 1
+    },
+    "Cybersecurity": {
+      "Neural/Deep": 4
+    },
+    "Data_Preprocessing": {
+      "Neural/Deep": 6
+    },
+    "Deployment_Light": {
+      "Neural/Deep": 6
+    },
+    "Education": {
+      "Neural/Deep": 2
+    },
+    "Engineering": {
+      "Neural/Deep": 3
+    },
+    "Evaluation_Monitoring": {
+      "Neural/Deep": 6
+    },
+    "Finance": {
+      "Neural/Deep": 4
+    },
+    "Healthcare": {
+      "Neural/Deep": 4
+    },
+    "Law": {
+      "Neural/Deep": 3
+    },
+    "Marketing": {
+      "Neural/Deep": 3
+    },
+    "Material_Science": {
+      "Neural/Deep": 3
+    },
+    "Multilingual": {
+      "Neural/Deep": 6
+    },
+    "Persona_Climate": {
+      "Neural/Deep": 5
+    },
+    "Persona_Healthcare": {
+      "Neural/Deep": 5
+    },
+    "Persona_Legal": {
+      "Neural/Deep": 5
+    },
+    "Persona_Maker": {
+      "Neural/Deep": 5
+    },
+    "Predictive_Analytics": {
+      "Classical/AutoML": 1,
+      "Neural/Deep": 2
+    },
+    "Real_Estate": {
+      "Neural/Deep": 1
+    },
+    "Security_Privacy": {
+      "Neural/Deep": 6
+    },
+    "Speech_Audio": {
+      "Neural/Deep": 6
+    },
+    "Supply_Chain": {
+      "Neural/Deep": 1
+    },
+    "Tabular_TimeSeries": {
+      "Classical/AutoML": 3,
+      "Neural/Deep": 3
+    },
+    "Text_Language": {
+      "Neural/Deep": 6
+    },
+    "Time_Series": {
+      "Classical/AutoML": 1
+    },
+    "Vision_Multimodal": {
+      "Neural/Deep": 6
+    }
+  },
+  "records": [
+    {
+      "category": "Advanced_NLP",
+      "file": "allenai_unifiedqa_t5_large.py",
+      "model_name": "allenai/unifiedqa-t5-large",
+      "pipeline": "question-answering",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Unified question answering across multiple domains"
+    },
+    {
+      "category": "Advanced_NLP",
+      "file": "facebook_blenderbot_400M_distill.py",
+      "model_name": "facebook/blenderbot-400M-distill",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Distilled conversational AI for customer service"
+    },
+    {
+      "category": "Advanced_NLP",
+      "file": "google_flan_t5_large.py",
+      "model_name": "google/flan-t5-large",
+      "pipeline": "text2text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Instruction-tuned T5 for complex reasoning and task solving"
+    },
+    {
+      "category": "Advanced_NLP",
+      "file": "google_flan_t5_xl.py",
+      "model_name": "google/flan-t5-xl",
+      "pipeline": "text2text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Extra large instruction-tuned model for complex tasks"
+    },
+    {
+      "category": "Advanced_NLP",
+      "file": "microsoft_DialoGPT_large.py",
+      "model_name": "microsoft/DialoGPT-large",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Large conversational AI for complex customer support"
+    },
+    {
+      "category": "Agents_Reasoning",
+      "file": "allenai_unifiedqa_t5_large.py",
+      "model_name": "allenai/unifiedqa-t5-large",
+      "pipeline": "question-answering",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Multi-step question answering and reasoning"
+    },
+    {
+      "category": "Agents_Reasoning",
+      "file": "facebook_blenderbot_400M_distill.py",
+      "model_name": "facebook/blenderbot-400M-distill",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Multi-turn conversational AI"
+    },
+    {
+      "category": "Agents_Reasoning",
+      "file": "google_flan_t5_large.py",
+      "model_name": "google/flan-t5-large",
+      "pipeline": "text2text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Chain-of-thought reasoning and instruction following"
+    },
+    {
+      "category": "Agents_Reasoning",
+      "file": "google_flan_t5_xl.py",
+      "model_name": "google/flan-t5-xl",
+      "pipeline": "text2text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Large-scale instruction following and reasoning"
+    },
+    {
+      "category": "Agents_Reasoning",
+      "file": "microsoft_CodeGPT_small_py.py",
+      "model_name": "microsoft/CodeGPT-small-py",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Code generation with reasoning"
+    },
+    {
+      "category": "Agents_Reasoning",
+      "file": "microsoft_DialoGPT_large.py",
+      "model_name": "microsoft/DialoGPT-large",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Conversational AI with reasoning capabilities"
+    },
+    {
+      "category": "Agriculture",
+      "file": "facebook_detr_resnet_50.py",
+      "model_name": "facebook/detr-resnet-50",
+      "pipeline": "object-detection",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Automated plant counting and yield estimation"
+    },
+    {
+      "category": "Agriculture",
+      "file": "facebook_mask2former.py",
+      "model_name": "facebook/mask2former",
+      "pipeline": "image-segmentation",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Soil composition analysis and nutrient mapping"
+    },
+    {
+      "category": "Agriculture",
+      "file": "facebook_swin_base_patch4_window7_224.py",
+      "model_name": "facebook/swin-base-patch4-window7-224",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Crop damage assessment from weather events"
+    },
+    {
+      "category": "Agriculture",
+      "file": "google_vit_base_patch16_224.py",
+      "model_name": "google/vit-base-patch16-224",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Agricultural disease detection and crop monitoring"
+    },
+    {
+      "category": "Agriculture",
+      "file": "google_vit_large_patch16_224.py",
+      "model_name": "google/vit-large-patch16-224",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Crop maturity assessment and harvest timing"
+    },
+    {
+      "category": "Audio_Speech",
+      "file": "facebook_fairseq_s2t_translator.py",
+      "model_name": "facebook/fairseq_s2t_translator",
+      "pipeline": "speech-to-text",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Real-time speech translation for global communication"
+    },
+    {
+      "category": "Audio_Speech",
+      "file": "facebook_hubert_large_ls960.py",
+      "model_name": "facebook/hubert-large-ls960",
+      "pipeline": "automatic-speech-recognition",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Self-supervised speech recognition for multiple languages"
+    },
+    {
+      "category": "Audio_Speech",
+      "file": "facebook_s2t_small_librispeech_asr.py",
+      "model_name": "facebook/s2t-small-librispeech-asr",
+      "pipeline": "automatic-speech-recognition",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Lightweight speech recognition for mobile applications"
+    },
+    {
+      "category": "Audio_Speech",
+      "file": "facebook_textlesslib_s2t.py",
+      "model_name": "facebook/textlesslib_s2t",
+      "pipeline": "speech-to-text",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Direct speech-to-speech translation without text"
+    },
+    {
+      "category": "Audio_Speech",
+      "file": "facebook_wav2vec2_large_960h.py",
+      "model_name": "facebook/wav2vec2-large-960h",
+      "pipeline": "automatic-speech-recognition",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "High-accuracy speech recognition for call centers"
+    },
+    {
+      "category": "Business_Intelligence",
+      "file": "autogluon_autogluon_tabular.py",
+      "model_name": "autogluon/autogluon-tabular",
+      "pipeline": "tabular-regression",
+      "modality": "Tabular/Time-series",
+      "type": "Classical/AutoML",
+      "description": "Business performance prediction and optimization"
+    },
+    {
+      "category": "Business_Intelligence",
+      "file": "facebook_bart_large_cnn.py",
+      "model_name": "facebook/bart-large-cnn",
+      "pipeline": "summarization",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Executive report summarization and business insights"
+    },
+    {
+      "category": "Business_Intelligence",
+      "file": "facebook_bart_large_mnli.py",
+      "model_name": "facebook/bart-large-mnli",
+      "pipeline": "zero-shot-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Business risk assessment and mitigation strategies"
+    },
+    {
+      "category": "Climate",
+      "file": "allenai_scibert_scivocab_uncased.py",
+      "model_name": "allenai/scibert_scivocab_uncased",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "SciBERT for scientific climate literature analysis"
+    },
+    {
+      "category": "Climate",
+      "file": "climatebert_distilbert_base_uncased_finetuned_climate.py",
+      "model_name": "climatebert/distilbert-base-uncased-finetuned-climate",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "ClimateBERT model for climate-related text analysis"
+    },
+    {
+      "category": "Climate",
+      "file": "microsoft_layoutlmv3_base.py",
+      "model_name": "microsoft/layoutlmv3-base",
+      "pipeline": "document-question-answering",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "LayoutLMv3 for climate report document understanding"
+    },
+    {
+      "category": "Climate",
+      "file": "sentence_transformers_all_MiniLM_L6_v2.py",
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Sentence transformer for climate document similarity"
+    },
+    {
+      "category": "Code_Intelligence",
+      "file": "bigcode_starcoder.py",
+      "model_name": "bigcode/starcoder",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Code completion and generation for 80+ programming languages"
+    },
+    {
+      "category": "Code_Intelligence",
+      "file": "codellama_CodeLlama_7b_hf.py",
+      "model_name": "codellama/CodeLlama-7b-hf",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Code generation and explanation"
+    },
+    {
+      "category": "Code_Intelligence",
+      "file": "facebook_incoder_1B.py",
+      "model_name": "facebook/incoder-1B",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Code infilling and completion"
+    },
+    {
+      "category": "Code_Intelligence",
+      "file": "microsoft_codebert_base.py",
+      "model_name": "microsoft/codebert-base",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Code understanding and semantic search"
+    },
+    {
+      "category": "Code_Intelligence",
+      "file": "Qwen_Qwen_Coder_7B_Instruct.py",
+      "model_name": "Qwen/Qwen-Coder-7B-Instruct",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Instruction-tuned code generation"
+    },
+    {
+      "category": "Code_Intelligence",
+      "file": "Salesforce_codet5_base.py",
+      "model_name": "Salesforce/codet5-base",
+      "pipeline": "text2text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Code-to-text and text-to-code generation"
+    },
+    {
+      "category": "Computer_Vision",
+      "file": "facebook_convnext_base.py",
+      "model_name": "facebook/convnext-base",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Modern ConvNet for image classification and feature extraction"
+    },
+    {
+      "category": "Cybersecurity",
+      "file": "cybersecurity_nlp_bert_malware.py",
+      "model_name": "cybersecurity-nlp/bert-malware",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "BERT model trained for malware detection and analysis"
+    },
+    {
+      "category": "Cybersecurity",
+      "file": "microsoft_DialoGPT_medium.py",
+      "model_name": "microsoft/DialoGPT-medium",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "DialoGPT for security chatbot and incident response"
+    },
+    {
+      "category": "Cybersecurity",
+      "file": "roberta_cybersec.py",
+      "model_name": "roberta-cybersec",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "RoBERTa model fine-tuned for cybersecurity text analysis"
+    },
+    {
+      "category": "Cybersecurity",
+      "file": "symanto_sn_xlm_roberta_base_snli_mnli_anli_xnli.py",
+      "model_name": "symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Multilingual RoBERTa for natural language inference in security contexts"
+    },
+    {
+      "category": "Data_Preprocessing",
+      "file": "cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+      "model_name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Text outlier and anomaly detection"
+    },
+    {
+      "category": "Data_Preprocessing",
+      "file": "facebook_bart_large_mnli.py",
+      "model_name": "facebook/bart-large-mnli",
+      "pipeline": "zero-shot-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Language detection and filtering"
+    },
+    {
+      "category": "Data_Preprocessing",
+      "file": "google_vit_base_patch16_224.py",
+      "model_name": "google/vit-base-patch16-224",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Image quality assessment and filtering"
+    },
+    {
+      "category": "Data_Preprocessing",
+      "file": "microsoft_layoutlmv3_base.py",
+      "model_name": "microsoft/layoutlmv3-base",
+      "pipeline": "token-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Automatic column type detection for CSV files"
+    },
+    {
+      "category": "Data_Preprocessing",
+      "file": "sentence_transformers_all_MiniLM_L6_v2.py",
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Semantic deduplication using embeddings"
+    },
+    {
+      "category": "Data_Preprocessing",
+      "file": "unitary_toxic_bert.py",
+      "model_name": "unitary/toxic-bert",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Content moderation and profanity detection"
+    },
+    {
+      "category": "Deployment_Light",
+      "file": "distilbert_base_uncased.py",
+      "model_name": "distilbert-base-uncased",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Lightweight BERT for fast inference"
+    },
+    {
+      "category": "Deployment_Light",
+      "file": "distilroberta_base.py",
+      "model_name": "distilroberta-base",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Fast RoBERTa variant for production"
+    },
+    {
+      "category": "Deployment_Light",
+      "file": "facebook_wav2vec2_base.py",
+      "model_name": "facebook/wav2vec2-base",
+      "pipeline": "automatic-speech-recognition",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Lightweight speech recognition"
+    },
+    {
+      "category": "Deployment_Light",
+      "file": "google_vit_base_patch16_224.py",
+      "model_name": "google/vit-base-patch16-224",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Efficient vision transformer"
+    },
+    {
+      "category": "Deployment_Light",
+      "file": "microsoft_DialoGPT_small.py",
+      "model_name": "microsoft/DialoGPT-small",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Lightweight conversational AI"
+    },
+    {
+      "category": "Deployment_Light",
+      "file": "sentence_transformers_all_MiniLM_L6_v2.py",
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Fast semantic search embeddings"
+    },
+    {
+      "category": "Education",
+      "file": "deepset_roberta_base_squad2.py",
+      "model_name": "deepset/roberta-base-squad2",
+      "pipeline": "question-answering",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "RoBERTa model fine-tuned for question answering"
+    },
+    {
+      "category": "Education",
+      "file": "openai_whisper_base.py",
+      "model_name": "openai/whisper-base",
+      "pipeline": "automatic-speech-recognition",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Whisper model for speech recognition and transcription"
+    },
+    {
+      "category": "Engineering",
+      "file": "microsoft_codebert_base.py",
+      "model_name": "microsoft/codebert-base",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "CodeBERT for code understanding and generation"
+    },
+    {
+      "category": "Engineering",
+      "file": "Salesforce_codet5_base.py",
+      "model_name": "Salesforce/codet5-base",
+      "pipeline": "text2text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "CodeT5 for code generation and summarization"
+    },
+    {
+      "category": "Engineering",
+      "file": "sentence_transformers_all_minilm_l6_v2.py",
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Sentence transformer for semantic search and similarity"
+    },
+    {
+      "category": "Evaluation_Monitoring",
+      "file": "cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+      "model_name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "A/B testing evaluation via scoring"
+    },
+    {
+      "category": "Evaluation_Monitoring",
+      "file": "facebook_bart_large_mnli.py",
+      "model_name": "facebook/bart-large-mnli",
+      "pipeline": "zero-shot-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Hallucination and fact-checking"
+    },
+    {
+      "category": "Evaluation_Monitoring",
+      "file": "google_flan_t5_base.py",
+      "model_name": "google/flan-t5-base",
+      "pipeline": "text2text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Output quality scoring and ranking"
+    },
+    {
+      "category": "Evaluation_Monitoring",
+      "file": "microsoft_DialoGPT_medium.py",
+      "model_name": "microsoft/DialoGPT-medium",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "LLM-as-a-Judge for output evaluation"
+    },
+    {
+      "category": "Evaluation_Monitoring",
+      "file": "sentence_transformers_all_MiniLM_L6_v2.py",
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Embedding drift detection for model monitoring"
+    },
+    {
+      "category": "Evaluation_Monitoring",
+      "file": "unitary_toxic_bert.py",
+      "model_name": "unitary/toxic-bert",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Bias and toxicity detection"
+    },
+    {
+      "category": "Finance",
+      "file": "mrm8488_distilroberta_finetuned_financial_news_sentiment.py",
+      "model_name": "mrm8488/distilroberta-finetuned-financial-news-sentiment",
+      "pipeline": "sentiment-analysis",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "DistilRoBERTa model fine-tuned for financial news sentiment"
+    },
+    {
+      "category": "Finance",
+      "file": "nlpaueb_financial_bert.py",
+      "model_name": "nlpaueb/financial-bert",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Financial BERT model for financial text understanding"
+    },
+    {
+      "category": "Finance",
+      "file": "prosusai_finbert.py",
+      "model_name": "ProsusAI/finbert",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "FinBERT"
+    },
+    {
+      "category": "Finance",
+      "file": "yiyanghkust_finbert_tone.py",
+      "model_name": "yiyanghkust/finbert-tone",
+      "pipeline": "sentiment-analysis",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "FinBERT model fine-tuned for financial sentiment analysis"
+    },
+    {
+      "category": "Healthcare",
+      "file": "cambridgeltl_SapBERT_from_PubMedBERT_fulltext.py",
+      "model_name": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "SapBERT for biomedical entity linking and normalization"
+    },
+    {
+      "category": "Healthcare",
+      "file": "d4data_biomedical_ner_all.py",
+      "model_name": "d4data/biomedical-ner-all",
+      "pipeline": "token-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Biomedical NER model for extracting medical entities"
+    },
+    {
+      "category": "Healthcare",
+      "file": "emilyalsentzer_bio_clinicalbert.py",
+      "model_name": "emilyalsentzer/Bio_ClinicalBERT",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Bio ClinicalBERT"
+    },
+    {
+      "category": "Healthcare",
+      "file": "microsoft_BiomedNLP_PubMedBERT_base_uncased_abstract_fulltext.py",
+      "model_name": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "PubMedBERT for biomedical text understanding"
+    },
+    {
+      "category": "Law",
+      "file": "bvanaken_bert_arch.py",
+      "model_name": "bvanaken/bert-arch",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "BERT-ARCH for legal argument mining"
+    },
+    {
+      "category": "Law",
+      "file": "nlpaueb_legal_bert_base_uncased.py",
+      "model_name": "nlpaueb/legal-bert-base-uncased",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Legal BERT model for legal text understanding"
+    },
+    {
+      "category": "Law",
+      "file": "zlucia_legalbert.py",
+      "model_name": "zlucia/legalbert",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "LegalBERT model for legal document analysis"
+    },
+    {
+      "category": "Marketing",
+      "file": "bert_base_uncased.py",
+      "model_name": "bert-base-uncased",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "General purpose BERT model for text classification and sentiment analysis"
+    },
+    {
+      "category": "Marketing",
+      "file": "cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+      "model_name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "pipeline": "sentiment-analysis",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "RoBERTa model fine-tuned for Twitter sentiment analysis"
+    },
+    {
+      "category": "Marketing",
+      "file": "Salesforce_blip_image_captioning.py",
+      "model_name": "Salesforce/blip-image-captioning",
+      "pipeline": "image-to-text",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "BLIP model for image captioning and visual question answering"
+    },
+    {
+      "category": "Material_Science",
+      "file": "CompVis_stable_diffusion_v1_4.py",
+      "model_name": "CompVis/stable-diffusion-v1-4",
+      "pipeline": "text-to-image",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Stable Diffusion for generating material visualizations"
+    },
+    {
+      "category": "Material_Science",
+      "file": "materialsproject_mp_bert.py",
+      "model_name": "materialsproject/mp-bert",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "BERT model trained on materials science literature"
+    },
+    {
+      "category": "Material_Science",
+      "file": "schwallie_chemberta.py",
+      "model_name": "schwallie/chemberta",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "ChemBERTa model for chemical text understanding"
+    },
+    {
+      "category": "Multilingual",
+      "file": "facebook_m2m100_418M.py",
+      "model_name": "facebook/m2m100_418M",
+      "pipeline": "translation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "100+ language translation model"
+    },
+    {
+      "category": "Multilingual",
+      "file": "facebook_mbart_large_50_many_to_many_mmt.py",
+      "model_name": "facebook/mbart-large-50-many-to-many-mmt",
+      "pipeline": "summarization",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Multilingual text summarization"
+    },
+    {
+      "category": "Multilingual",
+      "file": "Helsinki_NLP_opus_mt_en_de.py",
+      "model_name": "Helsinki-NLP/opus-mt-en-de",
+      "pipeline": "translation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "English to German translation"
+    },
+    {
+      "category": "Multilingual",
+      "file": "Helsinki_NLP_opus_mt_en_es.py",
+      "model_name": "Helsinki-NLP/opus-mt-en-es",
+      "pipeline": "translation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "High-quality English to Spanish translation"
+    },
+    {
+      "category": "Multilingual",
+      "file": "Helsinki_NLP_opus_mt_en_fr.py",
+      "model_name": "Helsinki-NLP/opus-mt-en-fr",
+      "pipeline": "translation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "English to French translation for international apps"
+    },
+    {
+      "category": "Multilingual",
+      "file": "sentence_transformers_paraphrase_multilingual_MiniLM_L12_v2.py",
+      "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Cross-lingual embeddings for 50+ languages"
+    },
+    {
+      "category": "Persona_Climate",
+      "file": "allenai_scibert_scivocab_uncased.py",
+      "model_name": "allenai/scibert_scivocab_uncased",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Scientific literature analysis for climate research"
+    },
+    {
+      "category": "Persona_Climate",
+      "file": "facebook_mask2former.py",
+      "model_name": "facebook/mask2former",
+      "pipeline": "image-segmentation",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Satellite image segmentation for environmental monitoring"
+    },
+    {
+      "category": "Persona_Climate",
+      "file": "google_vit_base_patch16_224.py",
+      "model_name": "google/vit-base-patch16-224",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Environmental image classification and monitoring"
+    },
+    {
+      "category": "Persona_Climate",
+      "file": "Helsinki_NLP_opus_mt_en_es.py",
+      "model_name": "Helsinki-NLP/opus-mt-en-es",
+      "pipeline": "translation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Multilingual climate research translation"
+    },
+    {
+      "category": "Persona_Climate",
+      "file": "nixtla_nixtla.py",
+      "model_name": "nixtla/nixtla",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Neural/Deep",
+      "description": "Climate data time series forecasting"
+    },
+    {
+      "category": "Persona_Healthcare",
+      "file": "d4data_biomedical_ner_all.py",
+      "model_name": "d4data/biomedical-ner-all",
+      "pipeline": "token-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Medical entity recognition and extraction"
+    },
+    {
+      "category": "Persona_Healthcare",
+      "file": "emilyalsentzer_Bio_ClinicalBERT.py",
+      "model_name": "emilyalsentzer/Bio_ClinicalBERT",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Medical diagnosis and classification"
+    },
+    {
+      "category": "Persona_Healthcare",
+      "file": "facebook_bart_large_cnn.py",
+      "model_name": "facebook/bart-large-cnn",
+      "pipeline": "summarization",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Clinical note summarization"
+    },
+    {
+      "category": "Persona_Healthcare",
+      "file": "facebook_blip_image_captioning_base.py",
+      "model_name": "facebook/blip-image-captioning-base",
+      "pipeline": "image-to-text",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Medical image analysis and captioning"
+    },
+    {
+      "category": "Persona_Healthcare",
+      "file": "microsoft_layoutlmv3_base.py",
+      "model_name": "microsoft/layoutlmv3-base",
+      "pipeline": "token-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "HIPAA-compliant data anonymization"
+    },
+    {
+      "category": "Persona_Legal",
+      "file": "dbmdz_bert_large_cased_finetuned_conll03_english.py",
+      "model_name": "dbmdz/bert-large-cased-finetuned-conll03-english",
+      "pipeline": "token-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Legal entity recognition and extraction"
+    },
+    {
+      "category": "Persona_Legal",
+      "file": "facebook_bart_large_cnn.py",
+      "model_name": "facebook/bart-large-cnn",
+      "pipeline": "summarization",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Legal document summarization"
+    },
+    {
+      "category": "Persona_Legal",
+      "file": "microsoft_layoutlmv3_base.py",
+      "model_name": "microsoft/layoutlmv3-base",
+      "pipeline": "document-question-answering",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Document structure extraction to JSON"
+    },
+    {
+      "category": "Persona_Legal",
+      "file": "microsoft_trocr_base_printed.py",
+      "model_name": "microsoft/trocr-base-printed",
+      "pipeline": "image-to-text",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Document text extraction and OCR"
+    },
+    {
+      "category": "Persona_Legal",
+      "file": "nlpaueb_legal_bert_base_uncased.py",
+      "model_name": "nlpaueb/legal-bert-base-uncased",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Contract analysis and clause classification"
+    },
+    {
+      "category": "Persona_Maker",
+      "file": "bigcode_starcoder.py",
+      "model_name": "bigcode/starcoder",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Code completion and generation for web apps"
+    },
+    {
+      "category": "Persona_Maker",
+      "file": "distilbert_base_uncased.py",
+      "model_name": "distilbert-base-uncased",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Lightweight model for fast API deployment"
+    },
+    {
+      "category": "Persona_Maker",
+      "file": "microsoft_DialoGPT_medium.py",
+      "model_name": "microsoft/DialoGPT-medium",
+      "pipeline": "text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Conversational AI for user interactions"
+    },
+    {
+      "category": "Persona_Maker",
+      "file": "Salesforce_blip_image_captioning_base.py",
+      "model_name": "Salesforce/blip-image-captioning-base",
+      "pipeline": "image-to-text",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Image description for accessibility"
+    },
+    {
+      "category": "Persona_Maker",
+      "file": "sentence_transformers_all_MiniLM_L6_v2.py",
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Search and recommendation engine"
+    },
+    {
+      "category": "Predictive_Analytics",
+      "file": "facebook_prophet.py",
+      "model_name": "facebook/prophet",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Classical/AutoML",
+      "description": "Business revenue prediction with seasonality"
+    },
+    {
+      "category": "Predictive_Analytics",
+      "file": "google_tft.py",
+      "model_name": "google/tft",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Neural/Deep",
+      "description": "Complex multivariate time series forecasting"
+    },
+    {
+      "category": "Predictive_Analytics",
+      "file": "nixtla_nixtla.py",
+      "model_name": "nixtla/nixtla",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Neural/Deep",
+      "description": "Inventory and demand forecasting for supply chain"
+    },
+    {
+      "category": "Real_Estate",
+      "file": "facebook_blip_image_captioning.py",
+      "model_name": "facebook/blip-image-captioning",
+      "pipeline": "image-to-text",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Automated property description generation for listings"
+    },
+    {
+      "category": "Security_Privacy",
+      "file": "cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+      "model_name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Content moderation and safety filtering"
+    },
+    {
+      "category": "Security_Privacy",
+      "file": "dbmdz_bert_large_cased_finetuned_conll03_english.py",
+      "model_name": "dbmdz/bert-large-cased-finetuned-conll03-english",
+      "pipeline": "token-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Document anonymization for legal and medical"
+    },
+    {
+      "category": "Security_Privacy",
+      "file": "facebook_detr_resnet_50.py",
+      "model_name": "facebook/detr-resnet-50",
+      "pipeline": "object-detection",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Privacy-aware face detection and blurring"
+    },
+    {
+      "category": "Security_Privacy",
+      "file": "google_vit_base_patch16_224.py",
+      "model_name": "google/vit-base-patch16-224",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Watermark and tamper detection"
+    },
+    {
+      "category": "Security_Privacy",
+      "file": "microsoft_layoutlmv3_base.py",
+      "model_name": "microsoft/layoutlmv3-base",
+      "pipeline": "token-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Personally Identifiable Information detection"
+    },
+    {
+      "category": "Security_Privacy",
+      "file": "unitary_toxic_bert.py",
+      "model_name": "unitary/toxic-bert",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Phishing and abuse detection"
+    },
+    {
+      "category": "Speech_Audio",
+      "file": "facebook_s2t_small_librispeech_asr.py",
+      "model_name": "facebook/s2t-small-librispeech-asr",
+      "pipeline": "automatic-speech-recognition",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Fast, lightweight speech recognition"
+    },
+    {
+      "category": "Speech_Audio",
+      "file": "facebook_wav2vec2_large_960h_lv60_self.py",
+      "model_name": "facebook/wav2vec2-large-960h-lv60-self",
+      "pipeline": "automatic-speech-recognition",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Robust speech recognition with noise robustness"
+    },
+    {
+      "category": "Speech_Audio",
+      "file": "j_hartmann_emotion_english_distilroberta_base.py",
+      "model_name": "j-hartmann/emotion-english-distilroberta-base",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Emotion detection from speech transcripts"
+    },
+    {
+      "category": "Speech_Audio",
+      "file": "microsoft_speecht5_tts.py",
+      "model_name": "microsoft/speecht5_tts",
+      "pipeline": "text-to-speech",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "High-quality text-to-speech synthesis"
+    },
+    {
+      "category": "Speech_Audio",
+      "file": "openai_whisper_large_v2.py",
+      "model_name": "openai/whisper-large-v2",
+      "pipeline": "automatic-speech-recognition",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "High-accuracy speech-to-text for 99 languages"
+    },
+    {
+      "category": "Speech_Audio",
+      "file": "pyannote_speaker_diarization.py",
+      "model_name": "pyannote/speaker-diarization",
+      "pipeline": "audio-classification",
+      "modality": "Audio",
+      "type": "Neural/Deep",
+      "description": "Speaker segmentation and identification"
+    },
+    {
+      "category": "Supply_Chain",
+      "file": "t5_base.py",
+      "model_name": "t5-base",
+      "pipeline": "text2text-generation",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "T5 model for text-to-text tasks in supply chain management"
+    },
+    {
+      "category": "Tabular_TimeSeries",
+      "file": "autogluon_autogluon_tabular.py",
+      "model_name": "autogluon/autogluon-tabular",
+      "pipeline": "tabular-classification",
+      "modality": "Tabular/Time-series",
+      "type": "Classical/AutoML",
+      "description": "AutoML for structured data and CSV files"
+    },
+    {
+      "category": "Tabular_TimeSeries",
+      "file": "facebook_prophet.py",
+      "model_name": "facebook/prophet",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Classical/AutoML",
+      "description": "Business forecasting with seasonality"
+    },
+    {
+      "category": "Tabular_TimeSeries",
+      "file": "google_tft.py",
+      "model_name": "google/tft",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Neural/Deep",
+      "description": "Multivariate time series forecasting"
+    },
+    {
+      "category": "Tabular_TimeSeries",
+      "file": "microsoft_forecast.py",
+      "model_name": "microsoft/forecast",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Classical/AutoML",
+      "description": "Enterprise time series forecasting"
+    },
+    {
+      "category": "Tabular_TimeSeries",
+      "file": "nixtla_nixtla.py",
+      "model_name": "nixtla/nixtla",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Neural/Deep",
+      "description": "Time series forecasting for sales and usage"
+    },
+    {
+      "category": "Tabular_TimeSeries",
+      "file": "salesforce_codegen_350M_mono.py",
+      "model_name": "salesforce/codegen-350M-mono",
+      "pipeline": "tabular-classification",
+      "modality": "Tabular/Time-series",
+      "type": "Neural/Deep",
+      "description": "Anomaly detection in tabular data"
+    },
+    {
+      "category": "Text_Language",
+      "file": "cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+      "model_name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "pipeline": "text-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Advanced sentiment analysis for social media and customer feedback"
+    },
+    {
+      "category": "Text_Language",
+      "file": "dbmdz_bert_large_cased_finetuned_conll03_english.py",
+      "model_name": "dbmdz/bert-large-cased-finetuned-conll03-english",
+      "pipeline": "token-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Named Entity Recognition for legal documents and contracts"
+    },
+    {
+      "category": "Text_Language",
+      "file": "deepset_roberta_base_squad2.py",
+      "model_name": "deepset/roberta-base-squad2",
+      "pipeline": "question-answering",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Extractive question answering for knowledge bases"
+    },
+    {
+      "category": "Text_Language",
+      "file": "facebook_bart_large_cnn.py",
+      "model_name": "facebook/bart-large-cnn",
+      "pipeline": "summarization",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Long document summarization for reports and transcripts"
+    },
+    {
+      "category": "Text_Language",
+      "file": "facebook_bart_large_mnli.py",
+      "model_name": "facebook/bart-large-mnli",
+      "pipeline": "zero-shot-classification",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Zero-shot topic modeling and classification"
+    },
+    {
+      "category": "Text_Language",
+      "file": "sentence_transformers_all_MiniLM_L6_v2.py",
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "pipeline": "feature-extraction",
+      "modality": "Text/NLP",
+      "type": "Neural/Deep",
+      "description": "Semantic search and embeddings for document retrieval"
+    },
+    {
+      "category": "Time_Series",
+      "file": "facebook_forecast.py",
+      "model_name": "facebook/forecast",
+      "pipeline": "time-series-forecasting",
+      "modality": "Tabular/Time-series",
+      "type": "Classical/AutoML",
+      "description": "Facebook's forecasting model for business metrics"
+    },
+    {
+      "category": "Vision_Multimodal",
+      "file": "facebook_detr_resnet_50.py",
+      "model_name": "facebook/detr-resnet-50",
+      "pipeline": "object-detection",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Object detection and counting"
+    },
+    {
+      "category": "Vision_Multimodal",
+      "file": "google_vit_base_patch16_224.py",
+      "model_name": "google/vit-base-patch16-224",
+      "pipeline": "image-classification",
+      "modality": "Vision",
+      "type": "Neural/Deep",
+      "description": "Object and brand classification"
+    },
+    {
+      "category": "Vision_Multimodal",
+      "file": "microsoft_layoutlmv3_base.py",
+      "model_name": "microsoft/layoutlmv3-base",
+      "pipeline": "document-question-answering",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Document layout analysis and understanding"
+    },
+    {
+      "category": "Vision_Multimodal",
+      "file": "microsoft_trocr_base_printed.py",
+      "model_name": "microsoft/trocr-base-printed",
+      "pipeline": "image-to-text",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Optical Character Recognition for documents"
+    },
+    {
+      "category": "Vision_Multimodal",
+      "file": "Salesforce_blip_image_captioning_base.py",
+      "model_name": "Salesforce/blip-image-captioning-base",
+      "pipeline": "image-to-text",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Image captioning for e-commerce and accessibility"
+    },
+    {
+      "category": "Vision_Multimodal",
+      "file": "Salesforce_blip_vqa_base.py",
+      "model_name": "Salesforce/blip-vqa-base",
+      "pipeline": "visual-question-answering",
+      "modality": "Vision+Text",
+      "type": "Neural/Deep",
+      "description": "Visual Question Answering"
+    }
+  ]
+}

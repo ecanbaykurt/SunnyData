@@ -1,0 +1,458 @@
+{
+  "project": "SunnySett AI Model Discovery Platform",
+  "description": "Collection of pre-trained models across 10 categories for AI model discovery and customization",
+  "total_categories": 10,
+  "total_models": 50,
+  "categories": {
+    "Marketing": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "bert-base-uncased",
+          "description": "General purpose BERT model for text classification and sentiment analysis",
+          "task": "text-classification",
+          "url": "https://huggingface.co/bert-base-uncased",
+          "script_path": "sunnysett_models/Marketing/bert_base_uncased.py",
+          "script_name": "bert_base_uncased.py"
+        },
+        {
+          "name": "facebook/bart-large-mnli",
+          "description": "BART model fine-tuned on Multi-Genre Natural Language Inference for zero-shot classification",
+          "task": "zero-shot-classification",
+          "url": "https://huggingface.co/facebook/bart-large-mnli",
+          "script_path": "sunnysett_models/Marketing/facebook_bart_large_mnli.py",
+          "script_name": "facebook_bart_large_mnli.py"
+        },
+        {
+          "name": "Salesforce/blip-image-captioning",
+          "description": "BLIP model for image captioning and visual question answering",
+          "task": "image-to-text",
+          "url": "https://huggingface.co/Salesforce/blip-image-captioning",
+          "script_path": "sunnysett_models/Marketing/Salesforce_blip_image_captioning.py",
+          "script_name": "Salesforce_blip_image_captioning.py"
+        },
+        {
+          "name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+          "description": "RoBERTa model fine-tuned for Twitter sentiment analysis",
+          "task": "sentiment-analysis",
+          "url": "https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest",
+          "script_path": "sunnysett_models/Marketing/cardiffnlp_twitter_roberta_base_sentiment_latest.py",
+          "script_name": "cardiffnlp_twitter_roberta_base_sentiment_latest.py"
+        },
+        {
+          "name": "microsoft/DialoGPT-medium",
+          "description": "DialoGPT model for conversational AI and chatbot applications",
+          "task": "text-generation",
+          "url": "https://huggingface.co/microsoft/DialoGPT-medium",
+          "script_path": "sunnysett_models/Marketing/microsoft_DialoGPT_medium.py",
+          "script_name": "microsoft_DialoGPT_medium.py"
+        }
+      ]
+    },
+    "Finance": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "ProsusAI/finbert",
+          "description": "BERT model pre-trained on financial communication text",
+          "task": "text-classification",
+          "url": "https://huggingface.co/ProsusAI/finbert",
+          "script_path": "sunnysett_models/Finance/ProsusAI_finbert.py",
+          "script_name": "ProsusAI_finbert.py"
+        },
+        {
+          "name": "yiyanghkust/finbert-tone",
+          "description": "FinBERT model fine-tuned for financial sentiment analysis",
+          "task": "sentiment-analysis",
+          "url": "https://huggingface.co/yiyanghkust/finbert-tone",
+          "script_path": "sunnysett_models/Finance/yiyanghkust_finbert_tone.py",
+          "script_name": "yiyanghkust_finbert_tone.py"
+        },
+        {
+          "name": "mrm8488/distilroberta-finetuned-financial-news-sentiment",
+          "description": "DistilRoBERTa model fine-tuned for financial news sentiment",
+          "task": "sentiment-analysis",
+          "url": "https://huggingface.co/mrm8488/distilroberta-finetuned-financial-news-sentiment",
+          "script_path": "sunnysett_models/Finance/mrm8488_distilroberta_finetuned_financial_news_sentiment.py",
+          "script_name": "mrm8488_distilroberta_finetuned_financial_news_sentiment.py"
+        },
+        {
+          "name": "nlpaueb/financial-bert",
+          "description": "Financial BERT model for financial text understanding",
+          "task": "text-classification",
+          "url": "https://huggingface.co/nlpaueb/financial-bert",
+          "script_path": "sunnysett_models/Finance/nlpaueb_financial_bert.py",
+          "script_name": "nlpaueb_financial_bert.py"
+        },
+        {
+          "name": "microsoft/DialoGPT-medium",
+          "description": "DialoGPT for financial chatbot applications",
+          "task": "text-generation",
+          "url": "https://huggingface.co/microsoft/DialoGPT-medium",
+          "script_path": "sunnysett_models/Finance/microsoft_DialoGPT_medium.py",
+          "script_name": "microsoft_DialoGPT_medium.py"
+        }
+      ]
+    },
+    "Material_Science": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "materialsproject/mp-bert",
+          "description": "BERT model trained on materials science literature",
+          "task": "text-classification",
+          "url": "https://huggingface.co/materialsproject/mp-bert",
+          "script_path": "sunnysett_models/Material_Science/materialsproject_mp_bert.py",
+          "script_name": "materialsproject_mp_bert.py"
+        },
+        {
+          "name": "schwallie/chemberta",
+          "description": "ChemBERTa model for chemical text understanding",
+          "task": "text-classification",
+          "url": "https://huggingface.co/schwallie/chemberta",
+          "script_path": "sunnysett_models/Material_Science/schwallie_chemberta.py",
+          "script_name": "schwallie_chemberta.py"
+        },
+        {
+          "name": "CompVis/stable-diffusion-v1-4",
+          "description": "Stable Diffusion for generating material visualizations",
+          "task": "text-to-image",
+          "url": "https://huggingface.co/CompVis/stable-diffusion-v1-4",
+          "script_path": "sunnysett_models/Material_Science/CompVis_stable_diffusion_v1_4.py",
+          "script_name": "CompVis_stable_diffusion_v1_4.py"
+        },
+        {
+          "name": "allenai/scibert_scivocab_uncased",
+          "description": "SciBERT model for scientific text understanding",
+          "task": "text-classification",
+          "url": "https://huggingface.co/allenai/scibert_scivocab_uncased",
+          "script_path": "sunnysett_models/Material_Science/allenai_scibert_scivocab_uncased.py",
+          "script_name": "allenai_scibert_scivocab_uncased.py"
+        },
+        {
+          "name": "microsoft/layoutlmv3-base",
+          "description": "LayoutLMv3 for document understanding and material data extraction",
+          "task": "document-question-answering",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base",
+          "script_path": "sunnysett_models/Material_Science/microsoft_layoutlmv3_base.py",
+          "script_name": "microsoft_layoutlmv3_base.py"
+        }
+      ]
+    },
+    "Engineering": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "sentence-transformers/all-MiniLM-L6-v2",
+          "description": "Sentence transformer for semantic search and similarity",
+          "task": "feature-extraction",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+          "script_path": "sunnysett_models/Engineering/sentence_transformers_all_MiniLM_L6_v2.py",
+          "script_name": "sentence_transformers_all_MiniLM_L6_v2.py"
+        },
+        {
+          "name": "microsoft/layoutlmv3-base",
+          "description": "LayoutLMv3 for technical document understanding",
+          "task": "document-question-answering",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base",
+          "script_path": "sunnysett_models/Engineering/microsoft_layoutlmv3_base.py",
+          "script_name": "microsoft_layoutlmv3_base.py"
+        },
+        {
+          "name": "microsoft/codebert-base",
+          "description": "CodeBERT for code understanding and generation",
+          "task": "text-classification",
+          "url": "https://huggingface.co/microsoft/codebert-base",
+          "script_path": "sunnysett_models/Engineering/microsoft_codebert_base.py",
+          "script_name": "microsoft_codebert_base.py"
+        },
+        {
+          "name": "Salesforce/codet5-base",
+          "description": "CodeT5 for code generation and summarization",
+          "task": "text2text-generation",
+          "url": "https://huggingface.co/Salesforce/codet5-base",
+          "script_path": "sunnysett_models/Engineering/Salesforce_codet5_base.py",
+          "script_name": "Salesforce_codet5_base.py"
+        },
+        {
+          "name": "facebook/bart-large-cnn",
+          "description": "BART model for text summarization of technical documents",
+          "task": "summarization",
+          "url": "https://huggingface.co/facebook/bart-large-cnn",
+          "script_path": "sunnysett_models/Engineering/facebook_bart_large_cnn.py",
+          "script_name": "facebook_bart_large_cnn.py"
+        }
+      ]
+    },
+    "Cybersecurity": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "cybersecurity-nlp/bert-malware",
+          "description": "BERT model trained for malware detection and analysis",
+          "task": "text-classification",
+          "url": "https://huggingface.co/cybersecurity-nlp/bert-malware",
+          "script_path": "sunnysett_models/Cybersecurity/cybersecurity_nlp_bert_malware.py",
+          "script_name": "cybersecurity_nlp_bert_malware.py"
+        },
+        {
+          "name": "roberta-cybersec",
+          "description": "RoBERTa model fine-tuned for cybersecurity text analysis",
+          "task": "text-classification",
+          "url": "https://huggingface.co/roberta-cybersec",
+          "script_path": "sunnysett_models/Cybersecurity/roberta_cybersec.py",
+          "script_name": "roberta_cybersec.py"
+        },
+        {
+          "name": "symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli",
+          "description": "Multilingual RoBERTa for natural language inference in security contexts",
+          "task": "text-classification",
+          "url": "https://huggingface.co/symanto/sn-xlm-roberta-base-snli-mnli-anli-xnli",
+          "script_path": "sunnysett_models/Cybersecurity/symanto_sn_xlm_roberta_base_snli_mnli_anli_xnli.py",
+          "script_name": "symanto_sn_xlm_roberta_base_snli_mnli_anli_xnli.py"
+        },
+        {
+          "name": "microsoft/DialoGPT-medium",
+          "description": "DialoGPT for security chatbot and incident response",
+          "task": "text-generation",
+          "url": "https://huggingface.co/microsoft/DialoGPT-medium",
+          "script_path": "sunnysett_models/Cybersecurity/microsoft_DialoGPT_medium.py",
+          "script_name": "microsoft_DialoGPT_medium.py"
+        },
+        {
+          "name": "facebook/bart-large-mnli",
+          "description": "BART for zero-shot classification of security threats",
+          "task": "zero-shot-classification",
+          "url": "https://huggingface.co/facebook/bart-large-mnli",
+          "script_path": "sunnysett_models/Cybersecurity/facebook_bart_large_mnli.py",
+          "script_name": "facebook_bart_large_mnli.py"
+        }
+      ]
+    },
+    "Healthcare": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "emilyalsentzer/Bio_ClinicalBERT",
+          "description": "Clinical BERT model for biomedical text understanding",
+          "task": "text-classification",
+          "url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT",
+          "script_path": "sunnysett_models/Healthcare/emilyalsentzer_Bio_ClinicalBERT.py",
+          "script_name": "emilyalsentzer_Bio_ClinicalBERT.py"
+        },
+        {
+          "name": "d4data/biomedical-ner-all",
+          "description": "Biomedical NER model for extracting medical entities",
+          "task": "token-classification",
+          "url": "https://huggingface.co/d4data/biomedical-ner-all",
+          "script_path": "sunnysett_models/Healthcare/d4data_biomedical_ner_all.py",
+          "script_name": "d4data_biomedical_ner_all.py"
+        },
+        {
+          "name": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+          "description": "SapBERT for biomedical entity linking and normalization",
+          "task": "feature-extraction",
+          "url": "https://huggingface.co/cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+          "script_path": "sunnysett_models/Healthcare/cambridgeltl_SapBERT_from_PubMedBERT_fulltext.py",
+          "script_name": "cambridgeltl_SapBERT_from_PubMedBERT_fulltext.py"
+        },
+        {
+          "name": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+          "description": "PubMedBERT for biomedical text understanding",
+          "task": "text-classification",
+          "url": "https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+          "script_path": "sunnysett_models/Healthcare/microsoft_BiomedNLP_PubMedBERT_base_uncased_abstract_fulltext.py",
+          "script_name": "microsoft_BiomedNLP_PubMedBERT_base_uncased_abstract_fulltext.py"
+        },
+        {
+          "name": "facebook/bart-large-cnn",
+          "description": "BART for medical document summarization",
+          "task": "summarization",
+          "url": "https://huggingface.co/facebook/bart-large-cnn",
+          "script_path": "sunnysett_models/Healthcare/facebook_bart_large_cnn.py",
+          "script_name": "facebook_bart_large_cnn.py"
+        }
+      ]
+    },
+    "Supply_Chain": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "Salesforce/codet5-base",
+          "description": "CodeT5 for supply chain code analysis and automation",
+          "task": "text2text-generation",
+          "url": "https://huggingface.co/Salesforce/codet5-base",
+          "script_path": "sunnysett_models/Supply_Chain/Salesforce_codet5_base.py",
+          "script_name": "Salesforce_codet5_base.py"
+        },
+        {
+          "name": "t5-base",
+          "description": "T5 model for text-to-text tasks in supply chain management",
+          "task": "text2text-generation",
+          "url": "https://huggingface.co/t5-base",
+          "script_path": "sunnysett_models/Supply_Chain/t5_base.py",
+          "script_name": "t5_base.py"
+        },
+        {
+          "name": "sentence-transformers/all-MiniLM-L6-v2",
+          "description": "Sentence transformer for supply chain document similarity",
+          "task": "feature-extraction",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+          "script_path": "sunnysett_models/Supply_Chain/sentence_transformers_all_MiniLM_L6_v2.py",
+          "script_name": "sentence_transformers_all_MiniLM_L6_v2.py"
+        },
+        {
+          "name": "facebook/bart-large-mnli",
+          "description": "BART for zero-shot classification of supply chain events",
+          "task": "zero-shot-classification",
+          "url": "https://huggingface.co/facebook/bart-large-mnli",
+          "script_path": "sunnysett_models/Supply_Chain/facebook_bart_large_mnli.py",
+          "script_name": "facebook_bart_large_mnli.py"
+        },
+        {
+          "name": "microsoft/layoutlmv3-base",
+          "description": "LayoutLMv3 for processing supply chain documents and forms",
+          "task": "document-question-answering",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base",
+          "script_path": "sunnysett_models/Supply_Chain/microsoft_layoutlmv3_base.py",
+          "script_name": "microsoft_layoutlmv3_base.py"
+        }
+      ]
+    },
+    "Education": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "deepset/roberta-base-squad2",
+          "description": "RoBERTa model fine-tuned for question answering",
+          "task": "question-answering",
+          "url": "https://huggingface.co/deepset/roberta-base-squad2",
+          "script_path": "sunnysett_models/Education/deepset_roberta_base_squad2.py",
+          "script_name": "deepset_roberta_base_squad2.py"
+        },
+        {
+          "name": "openai/whisper-base",
+          "description": "Whisper model for speech recognition and transcription",
+          "task": "automatic-speech-recognition",
+          "url": "https://huggingface.co/openai/whisper-base",
+          "script_path": "sunnysett_models/Education/openai_whisper_base.py",
+          "script_name": "openai_whisper_base.py"
+        },
+        {
+          "name": "facebook/bart-large-cnn",
+          "description": "BART for educational content summarization",
+          "task": "summarization",
+          "url": "https://huggingface.co/facebook/bart-large-cnn",
+          "script_path": "sunnysett_models/Education/facebook_bart_large_cnn.py",
+          "script_name": "facebook_bart_large_cnn.py"
+        },
+        {
+          "name": "sentence-transformers/all-MiniLM-L6-v2",
+          "description": "Sentence transformer for educational content similarity",
+          "task": "feature-extraction",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+          "script_path": "sunnysett_models/Education/sentence_transformers_all_MiniLM_L6_v2.py",
+          "script_name": "sentence_transformers_all_MiniLM_L6_v2.py"
+        },
+        {
+          "name": "microsoft/DialoGPT-medium",
+          "description": "DialoGPT for educational chatbots and tutoring",
+          "task": "text-generation",
+          "url": "https://huggingface.co/microsoft/DialoGPT-medium",
+          "script_path": "sunnysett_models/Education/microsoft_DialoGPT_medium.py",
+          "script_name": "microsoft_DialoGPT_medium.py"
+        }
+      ]
+    },
+    "Law": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "nlpaueb/legal-bert-base-uncased",
+          "description": "Legal BERT model for legal text understanding",
+          "task": "text-classification",
+          "url": "https://huggingface.co/nlpaueb/legal-bert-base-uncased",
+          "script_path": "sunnysett_models/Law/nlpaueb_legal_bert_base_uncased.py",
+          "script_name": "nlpaueb_legal_bert_base_uncased.py"
+        },
+        {
+          "name": "zlucia/legalbert",
+          "description": "LegalBERT model for legal document analysis",
+          "task": "text-classification",
+          "url": "https://huggingface.co/zlucia/legalbert",
+          "script_path": "sunnysett_models/Law/zlucia_legalbert.py",
+          "script_name": "zlucia_legalbert.py"
+        },
+        {
+          "name": "bvanaken/bert-arch",
+          "description": "BERT-ARCH for legal argument mining",
+          "task": "text-classification",
+          "url": "https://huggingface.co/bvanaken/bert-arch",
+          "script_path": "sunnysett_models/Law/bvanaken_bert_arch.py",
+          "script_name": "bvanaken_bert_arch.py"
+        },
+        {
+          "name": "facebook/bart-large-mnli",
+          "description": "BART for zero-shot legal text classification",
+          "task": "zero-shot-classification",
+          "url": "https://huggingface.co/facebook/bart-large-mnli",
+          "script_path": "sunnysett_models/Law/facebook_bart_large_mnli.py",
+          "script_name": "facebook_bart_large_mnli.py"
+        },
+        {
+          "name": "microsoft/layoutlmv3-base",
+          "description": "LayoutLMv3 for legal document understanding",
+          "task": "document-question-answering",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base",
+          "script_path": "sunnysett_models/Law/microsoft_layoutlmv3_base.py",
+          "script_name": "microsoft_layoutlmv3_base.py"
+        }
+      ]
+    },
+    "Climate": {
+      "model_count": 5,
+      "models": [
+        {
+          "name": "climatebert/distilbert-base-uncased-finetuned-climate",
+          "description": "ClimateBERT model for climate-related text analysis",
+          "task": "text-classification",
+          "url": "https://huggingface.co/climatebert/distilbert-base-uncased-finetuned-climate",
+          "script_path": "sunnysett_models/Climate/climatebert_distilbert_base_uncased_finetuned_climate.py",
+          "script_name": "climatebert_distilbert_base_uncased_finetuned_climate.py"
+        },
+        {
+          "name": "allenai/scibert_scivocab_uncased",
+          "description": "SciBERT for scientific climate literature analysis",
+          "task": "text-classification",
+          "url": "https://huggingface.co/allenai/scibert_scivocab_uncased",
+          "script_path": "sunnysett_models/Climate/allenai_scibert_scivocab_uncased.py",
+          "script_name": "allenai_scibert_scivocab_uncased.py"
+        },
+        {
+          "name": "facebook/bart-large-cnn",
+          "description": "BART for climate research summarization",
+          "task": "summarization",
+          "url": "https://huggingface.co/facebook/bart-large-cnn",
+          "script_path": "sunnysett_models/Climate/facebook_bart_large_cnn.py",
+          "script_name": "facebook_bart_large_cnn.py"
+        },
+        {
+          "name": "sentence-transformers/all-MiniLM-L6-v2",
+          "description": "Sentence transformer for climate document similarity",
+          "task": "feature-extraction",
+          "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+          "script_path": "sunnysett_models/Climate/sentence_transformers_all_MiniLM_L6_v2.py",
+          "script_name": "sentence_transformers_all_MiniLM_L6_v2.py"
+        },
+        {
+          "name": "microsoft/layoutlmv3-base",
+          "description": "LayoutLMv3 for climate report document understanding",
+          "task": "document-question-answering",
+          "url": "https://huggingface.co/microsoft/layoutlmv3-base",
+          "script_path": "sunnysett_models/Climate/microsoft_layoutlmv3_base.py",
+          "script_name": "microsoft_layoutlmv3_base.py"
+        }
+      ]
+    }
+  }
+}

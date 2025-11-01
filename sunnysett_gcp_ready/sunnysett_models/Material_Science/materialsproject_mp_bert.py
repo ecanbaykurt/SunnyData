@@ -1,0 +1,129 @@
+#!/usr/bin/env python3
+"""
+SunnySett Model: materialsproject/mp-bert for Material Science
+============================================================
+
+This script demonstrates how to use materialsproject/mp-bert for text-classification
+in material science applications.
+
+Description: BERT model trained on materials science literature
+
+Dependencies:
+- transformers
+- torch
+- numpy
+- pandas (optional)
+
+Usage:
+    python materialsproject_mp_bert.py
+"""
+
+import os
+import sys
+import subprocess
+import warnings
+warnings.filterwarnings("ignore")
+
+def install_dependencies():
+    """Install required packages if not already installed."""
+    required_packages = [
+        "transformers>=4.21.0",
+        "torch>=1.12.0",
+        "numpy>=1.21.0",
+        "pandas>=1.3.0"
+    ]
+    
+    # Add specific dependencies based on task
+    if "text-classification" == "feature-extraction":
+        required_packages.append("sentence-transformers>=2.2.0")
+        required_packages.append("scikit-learn>=1.0.0")
+    elif "text-classification" == "automatic-speech-recognition":
+        required_packages.append("librosa>=0.9.0")
+        required_packages.append("soundfile>=0.10.0")
+    elif "text-classification" == "text-to-image":
+        required_packages.append("diffusers>=0.10.0")
+        required_packages.append("pillow>=8.0.0")
+    
+    for package in required_packages:
+        try:
+            __import__(package.split(">=")[0].replace("-", "_"))
+        except ImportError:
+            print(f"Installing {package}...")
+            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+def load_model():
+    """Load the materialsproject/mp-bert model and tokenizer."""
+    try:
+        from transformers import pipeline
+        
+        model_name = "materialsproject/mp-bert"
+        print(f"Loading {model_name}...")
+        
+        # Create pipeline for text-classification
+        classifier = pipeline("text-classification", model=model_name)
+        
+        return classifier, model_name
+        
+    except Exception as e:
+        print(f"Error loading model: {e}")
+        return None, None
+
+def run_inference(classifier, model_name):
+    """Run sample inference on material science text."""
+    if classifier is None:
+        print("Model not loaded. Cannot run inference.")
+        return
+    
+    print(f"\n=== {model_name} Material Science Analysis ===")
+    
+    # Sample material science texts
+    sample_texts = [
+        "Sample text for material science analysis and testing.",
+        "This is another example of material science content.",
+        "Testing the model with various material science scenarios.",
+        "Example text to demonstrate the model's capabilities.",
+        "Sample data for material science processing and analysis."
+    ]
+    
+    print("Material Science Text Analysis:")
+    print("-" * 60)
+    
+    for i, text in enumerate(sample_texts, 1):
+        try:
+            result = classifier(text)
+            print(f"{i}. Text: '{text}'")
+            print(f"   Result: {result}")
+            print()
+        except Exception as e:
+            print(f"Error processing text {i}: {e}")
+
+def main():
+    """Main function to run the materialsproject/mp-bert analysis."""
+    print("SunnySett Material Science Model: materialsproject/mp-bert")
+    print("=" * 60)
+    
+    # Install dependencies
+    print("Checking dependencies...")
+    install_dependencies()
+    
+    # Load model
+    classifier, model_name = load_model()
+    
+    if classifier:
+        print(f"✅ Model '{model_name}' loaded successfully!")
+        
+        # Run inference
+        run_inference(classifier, model_name)
+        
+        print("\n=== Usage Tips ===")
+        print(f"1. This model is designed for text-classification")
+        print(f"2. Description: BERT model trained on materials science literature")
+        print("3. Use for material science applications and analysis")
+        print("4. Consider fine-tuning on your specific domain data")
+        print("5. Check the model card for more detailed usage instructions")
+        
+    else:
+        print("❌ Failed to load model. Please check your internet connection and try again.")
+
+if __name__ == "__main__":
+    main()
