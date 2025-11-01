@@ -1,4 +1,4 @@
-# SunnySett AI Model Discovery Platform
+# SunnyData
 
 Curated library of 141 ready-to-run model scripts spanning 33 categories and multiple modalities. Use these assets to explore, prototype, and deploy NLP, vision, audio, tabular, and multimodal workloads with minimal setup.
 
